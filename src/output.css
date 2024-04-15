@@ -554,16 +554,12 @@ video {
   --tw-contain-style:  ;
 }
 
-.mb-10 {
-  margin-bottom: 2.5rem;
+.p-8 {
+  padding: 2rem;
 }
 
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -577,4 +573,15 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.title-heading {
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+.default-spacing {
+  padding-top: 2.5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
 }
