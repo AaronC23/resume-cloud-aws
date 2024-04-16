@@ -1,4 +1,15 @@
-resource "aws_iam_role" "lambda_role" {
-    name = "Cloud_Resume_Lambda_Function_Role"
-    
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.45.0"
+    }
+  }
+
+  required_version = ">= 1.2.0"
+}
+
+provider "aws" {
+  profile = "default"
+  region  = "ap-southeast-2"
 }
