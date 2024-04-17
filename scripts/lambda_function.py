@@ -3,8 +3,8 @@ import boto3
 
 client = boto3.client('dynamodb')
 dynamodb = boto3.resource("dynamodb")
-table = dynamodb.Table('website_values')
-tableName = 'website_values'
+table = dynamodb.Table('website_resume')
+tableName = 'website_resume'
 
 def lambda_handler(event, context):
     print('Event received...', event)
