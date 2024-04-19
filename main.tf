@@ -1,4 +1,10 @@
 terraform {
+  backend "s3" {
+    bucket = "clarka-terraform-bucket"
+    key = "key/terraform.tfstate"
+    region = "ap-southeast-2"
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"

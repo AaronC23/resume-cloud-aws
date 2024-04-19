@@ -1,3 +1,4 @@
 node_modules/
 scripts/*.zip
 .terraform*
+terraform.tfstate*

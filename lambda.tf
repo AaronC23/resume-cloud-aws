@@ -30,7 +30,7 @@ resource "aws_iam_policy" "dynamoDBLambdaPolicy" {
         ]
         # Reference dynamo db table created in dynamo.tf
         Resource = [
-          aws_dynamodb_table.viewCountTable.arn
+          aws_dynamodb_table.websiteTable.arn
         ]
       }
     ]

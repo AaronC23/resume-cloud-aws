@@ -7,3 +7,5 @@ Instructions (for myself)
 Need to run this command to get tailwindcss to work...
 
 # npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+
+Run `terraform state pull`
