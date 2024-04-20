@@ -3,3 +3,8 @@ variable "instance_name" {
   type        = string
   default     = "ExampleAppServerInstance"
 }
+
+variable "bucket_name" {
+  description = "Bucket name for website files"
+  type        = string
+}

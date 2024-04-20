@@ -1,0 +1,1 @@
+bucket_name = "clarka-terraform-bucket"
