@@ -18,7 +18,7 @@ resource "aws_iam_role" "lambdaRole" {
 
 # Create iam policy for dynamo db access
 resource "aws_iam_policy" "dynamoDBLambdaPolicy" {
-  name = "DynamoDBLambdaPolicy"
+  name_prefix = "DynamoDBLambdaPolicy"
 
   policy = jsonencode({
     Version = "2012-10-17"
@@ -51,9 +51,9 @@ data "archive_file" "lambda" {
 }
 
 # Create our lambda function
-resource "aws_lambda_function" "test_lambda" {
+resource "aws_lambda_function" "count_lambda" {
   filename      = "scripts/lambda_function.zip"
-  function_name = "my_lambda"
+  function_name = "count_lambda"
   role          = aws_iam_role.lambdaRole.arn
   handler       = "lambda_function.lambda_handler"
 
