@@ -19,3 +19,11 @@ provider "aws" {
   profile = "default"
   region  = "ap-southeast-2"
 }
+
+provider "aws" {
+  profile = "default"
+  region  = "us-east-1"
+  alias = "us"
+}
+
+
