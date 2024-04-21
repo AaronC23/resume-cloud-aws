@@ -3,16 +3,41 @@ module "template_files" {
 
   # {path.module} gets the path of where this file is located
   base_dir = "${path.module}/src"
-  template_vars = {
-    # Pass in any values that you wish to use in your templates.
-    vpc_id = "vpc-abc123"
-  }
+}
+
+resource "aws_s3_bucket" "bucket" {
+  bucket = var.bucket_name
+}
+
+resource "aws_s3_bucket_public_access_block" "bucket_access_block" {
+    bucket = aws_s3_bucket.bucket.id
+
+    block_public_acls   = false
+    block_public_policy = false
+}
+
+resource "aws_s3_bucket_policy" "bucket_policy" {
+  bucket = aws_s3_bucket.bucket.id
+  policy = jsonencode(
+    {
+      "Version" : "2012-10-17",
+      "Statement" : [
+        {
+          "Sid" : "PublicReadGetObject",
+          "Effect" : "Allow",
+          "Principal" : "*",
+          "Action" : "s3:GetObject",
+          "Resource" : "arn:aws:s3:::${aws_s3_bucket.bucket.id}/*"
+        }
+      ]
+    }
+  )
 }
 
 resource "aws_s3_object" "static_files" {
   for_each = module.template_files.files
 
-  bucket       = var.bucket_name
+  bucket       = aws_s3_bucket.bucket.id
   key          = each.key
   content_type = each.value.content_type
 
@@ -25,4 +50,12 @@ resource "aws_s3_object" "static_files" {
   # Unless the bucket has encryption enabled, the ETag of each object is an
   # MD5 hash of that object.
   etag = each.value.digests.md5
+}
+
+resource "aws_s3_bucket_website_configuration" "hosting" {
+  bucket = aws_s3_bucket.bucket.id
+
+  index_document {
+    suffix = "index.html"
+  }
 }

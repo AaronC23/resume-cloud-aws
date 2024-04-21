@@ -1,1 +1,1 @@
-bucket_name = "clarka-terraform-bucket"
+bucket_name = "clarka-terraform-bucket-improved"
