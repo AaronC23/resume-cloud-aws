@@ -9,7 +9,12 @@ variable "bucket_name" {
   type        = string
 }
 
-variable "domain_name" {
-  description = "Domain name for website"
+variable "root_domain_name" {
+  description = "Root domain name for website"
+  type        = string
+}
+
+variable "www_domain_name" {
+  description = "www domain name for website"
   type        = string
 }

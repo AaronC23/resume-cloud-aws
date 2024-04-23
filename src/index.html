@@ -1,53 +1,52 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <link href="./output.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Replace the link above with your own Tailwind CSS file if you're not using a CDN -->
 </head>
-<title>Hello @ Aaron Clark</title>
-
-<body>
-    <!-- Top Level Div -->
-    <div class="default-spacing">
-        <!-- Title -->
-        <div class="title text-center">
-            <h1 class="text-3xl font-bold">Aaron Clark</h1>
-            <h3 class="title-heading font-bold">Full Stack Developer</h3>
-        </div>
-
-        <!-- Summary Section -->
-        <div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugiat ullam, pariatur, iste
-                sunt ducimus modi cum ad provident dolores mollitia voluptatibus nemo amet ipsam
-                corporis, accusamus repudiandae nihil! Sed? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et
-                fugiat ullam, pariatur, iste
-                sunt ducimus modi cum ad provident dolores mollitia voluptatibus nemo amet ipsam
-                corporis, accusamus repudiandae nihil!
-            </p>
-        </div>
-
-        <!-- Work Experience Section -->
-        <div>
-            <h2 class="text-left">Work Experience</h2>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-4 xl:w-3/4 text-center">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h1 class="text-3xl font-bold mb-4">Aaron Clark</h1>
+            <p class="text-gray-600 mb-4">Full Stack Software Engineer</p>
+            <hr class="mb-4">
             <div>
-                <div>
-                    <h3>Saab Australia</h3>
-                    <h4>Full Stack Software Engineer</h4>
-                </div>
-                <div>
-                    <h3>Jan 2022 - Present</h3>
-                </div>
+                <h2 class="text-xl font-semibold mb-2">Contact Information</h2>
+                <ul>
+                    <li class="mb-2">Email: aaronclarkofficial@gmail.com</li>
+                    <li class="mb-2">Phone: 0437324945</li>
+                </ul>
             </div>
             <div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et fugiat ullam, pariatur, iste
-                        sunt ducimus modi cum ad provident dolores mollitia voluptatibus nemo amet ipsam
-                        corporis,
-                        accusamus repudiandae nihil! Sed?</p>
-                </div>
+                <h2 class="text-xl font-semibold mb-2">Skills</h2>
+                <ul>
+                    <li class="mb-2">HTML/CSS</li>
+                    <li class="mb-2">JavaScript</li>
+                    <li class="mb-2">React.js</li>
+                    <li class="mb-2">Node.js</li>
+                </ul>
             </div>
-            <!-- TODO Copy above and fit other -->
+            <h2 class="text-xl font-semibold mb-2 mt-6">Experience</h2>
+            <div class="mb-4">
+                <h3 class="text-lg font-semibold mb-2">Job Title</h3>
+                <p class="text-gray-600">Company Name</p>
+                <p class="text-gray-600">Date Range</p>
+                <ul>
+                    <li class="mb-2">Responsibility 1</li>
+                    <li class="mb-2">Responsibility 2</li>
+                    <li class="mb-2">Responsibility 3</li>
+                </ul>
+            </div>
+            <h2 class="text-xl font-semibold mb-2 mt-6">Education</h2>
+            <div>
+                <h3 class="text-lg font-semibold mb-2">Degree</h3>
+                <p class="text-gray-600">University Name</p>
+                <p class="text-gray-600">Date Range</p>
+            </div>
         </div>
     </div>
 </body>
-
 </html>
