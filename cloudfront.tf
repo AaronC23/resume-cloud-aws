@@ -2,7 +2,7 @@ resource "aws_cloudfront_distribution" "distribution" {
   enabled         = true
   is_ipv6_enabled = true
 
-  aliases=[var.domain_name]
+  aliases=[var.root_domain_name]
 
   origin {
     domain_name = aws_s3_bucket_website_configuration.hosting.website_endpoint
@@ -23,7 +23,6 @@ resource "aws_cloudfront_distribution" "distribution" {
   viewer_certificate {
     acm_certificate_arn = aws_acm_certificate.cert.arn
     ssl_support_method = "sni-only"
-    # cloudfront_default_certificate = true
   }
 
   restrictions {
