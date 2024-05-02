@@ -10,6 +10,11 @@ output "s3_url" {
 }
 
 output "website_url" {
-  description = "Website URL (HTTPS)"
+  description = "Cloudfront URL (HTTPS)"
   value       = aws_cloudfront_distribution.distribution.domain_name
+}
+
+output "domain_url" {
+  description = "Website URL"
+  value = aws_route53_record.www.name
 }
