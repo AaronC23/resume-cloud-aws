@@ -4,43 +4,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+    <title>Hello @ Aaron Clark</title>
     <script type="text/javascript" src="api.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- Replace the link above with your own Tailwind CSS file if you're not using a CDN -->
 </head>
 
 <body class="bg-gray-100">
-    <div class="container mx-auto p-4 xl:w-3/4 text-center">
-        <div class="bg-white rounded-lg shadow-lg p-6">
-            <h1 class="text-3xl font-bold mb-4">Aaron Clark</h1>
-            <p class="text-gray-600 mb-4">Full Stack Software Engineer</p>
-            <hr class="mb-4">
+    <!-- Container = ??
+        mx-auto centres the container into middle of screen>
+        xl
+    -->
+    <div class="grid grid-cols-7 m-0 gap-0 p-4 container w-full mx-auto">
+        <!-- Contact Information / Skills Column -->
+        <div class="p-4 col-span-2 bg-green-100">
+            <!-- Objective -->
             <div>
-                <h2 class="text-xl font-semibold mb-2">Contact Information</h2>
-                <ul>
-                    <li class="mb-2">Email: aaronclarkofficial@gmail.com</li>
-                    <li class="mb-2">Phone: 0437324945</li>
-                </ul>
+                <h2 class="text-xl font-semibold ml-6">Objective </h2>
+                <p class="text-sm text-left p-4">Software Engineer with 3 years of full-stack
+                    development, passionate about delivering enjoyable user experiences in React and VueJS. Experience
+                    in managing deployments of Kubernetes and Docker containers to
+                    produce highly available and elegant solutions. Experience in engineering real-time Java
+                    microservices and PostgreSQL database design. Enthusiastic and committed to continuously learning
+                    and growing as an engineer.
+                </p>
             </div>
+            <!-- Skills -->
             <div>
-                <h2 class="text-xl font-semibold mb-2">Skills</h2>
-                <ul>
+                <h2 class="text-xl font-semibold ml-6">Skills</h2>
+                <ul class="list-disc ml-6">
+                    <li>
+                        Java (Vert.X)
+                    </li>
+                    <li>
+                        Kubernetes
+                    </li>
+                    <li>
+                        Docker
+                    </li>
+                    <li>
+                        React
+                    </li>
+                    <li>
+                        VueJS
+                    </li>
+                    <li>
+                        PostgreSQL
+                    </li>
+                    <li>
+                        AWS (S3, Lambda, API Gateway, CloudFront, DynamoDB)
+                    </li>
+                    <li>
+                        Terraform
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+        <!-- Work Experience Column -->
+        <div class="p-4 text-center col-span-5 bg-white">Work Experience</div>
+    </div>
+    <div class="container mx-auto p-4 w-full">
+        <div class="bg-white rounded-lg shadow-lg p-6">
+            <h1 class="text-2xl font-semibold mb-1 text-center">Aaron Clark</h1>
+            <p class="text-black-800 mb-4 text-center">Adelaide, Australia | aaronclarkofficial@gmail.com | 0437324945 |
+                https://www.linkedin.com/ln/aaron-clarky</p>
+            <hr class="mb-4">
+            <h1 class="text-xl text-left font-semibold ml-6">Full Stack Software Engineer</h1>
+            <p class="text-black-800 ml-6">Results driven Software Engineer with 3 years of full-stack development,
+                passionate about delivering enjoyable
+                user experiences in React and VueJS. Performing deployment of Kubernetes and Docker containers to
+                produce high available and elegant solutions. Developing Java microservices and undertaking PostgreSQL
+                database design. Enthusiastic and committed to continuously learning and growing as an engineer</p>
+            <div>
+                <h2 class="text-xl font-semibold ml-6">Work Experience</h2>
+                <ul class="ml-6">
                     <li class="mb-2">HTML/CSS</li>
                     <li class="mb-2">JavaScript</li>
                     <li class="mb-2">React.js</li>
                     <li class="mb-2">Node.js</li>
                 </ul>
             </div>
-            <h2 class="text-xl font-semibold mb-2 mt-6">Experience</h2>
+            <h2 class="text-xl font-semibold ml-6">Work Experience</h2>
             <div class="mb-4">
-                <h3 class="text-lg font-semibold mb-2">Job Title</h3>
-                <p class="text-gray-600">Company Name</p>
-                <p class="text-gray-600">Date Range</p>
+                <h3 class="text-lg font-semibold ml-6">Saab Australia</h3>
+                <p class="text-gray-600 ml-6">Full Stack Software Engineer / Graduate Engineer</p>
+                <p class="text-gray-600 ml-6">Date Range</p>
+                <ul class="list-disc ml-6">
+                    <li class="ml-6">Led the implementation and design of a Java microservice to enable users to display
+                        an overall data
+                        source health. Undertook the seamless integration of REST APIs and handling of data fetch and
+                        rendering in React. Collaborated with backend developers to define endpoints in Open API and
+                        performed diagnosis of bugs and issues.</li>
+                    <li class="ml-6">
+                        Performed rapid development and testing of Docker containerised microservices in a KANBAN
+                        environment via Rancher and Kubernetes.
+                    </li>
+                    <li class="ml-6">
+                        Monitored, diagnosed and resolved issues with Jenkins pipelines and builds to ensure minimal
+                        downtime for other developers.
+                    </li>
+                    <li class="ml-6">
+                        Co-authored and reviewed a formal Software Test document. Identified gaps in untested
+                        functionality
+                        and developed tests to address them. Performed refactoring of code to pass failing tests,
+                        achieving 80%
+                        test and passing coverage
+                    </li>
+                    <li class="ml-6">
+                        Facilitated stakeholder discussions to prototype and refine mock user interfaces, delivering
+                        intuitive and
+                        polished designs align with stakeholder needs
+                    </li>
+                    <li class="ml-6">
+                        Led boarding and mentoring support for new teammates, acting as a point of contact to address
+                        any
+                        inquiries or problems they faced
+                    </li>
+
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-lg font-semibold ml-6">Job Title</h3>
+                <p class="text-gray-600 ml-6">Company Name</p>
+                <p class="text-gray-600 ml-6">Date Range</p>
                 <ul>
-                    <li class="mb-2">Responsibility 1</li>
-                    <li class="mb-2">Responsibility 2</li>
-                    <li class="mb-2">Responsibility 3</li>
+                    <li class="ml-6">Responsibility 1</li>
+                </ul>
+            </div>
+            <div class="mb-4">
+                <h3 class="text-lg font-semibold ml-6">Job Title</h3>
+                <p class="text-gray-600 ml-6">Company Name</p>
+                <p class="text-gray-600 ml-6">Date Range</p>
+                <ul>
+                    <li class="ml-6">Responsibility 1</li>
                 </ul>
             </div>
             <h2 class="text-xl font-semibold mb-2 mt-6">Education</h2>
@@ -49,10 +149,10 @@
                 <p class="text-gray-600">University Name</p>
                 <p class="text-gray-600">Date Range</p>
             </div>
-            <div>
-                <footer id="counter"></footer>
-            </div>
         </div>
+    </div>
+    <div class="container mx-auto p-4 w-xl text-center">
+        <footer id="counter">Visitor Counter: </footer>
     </div>
 </body>
 
