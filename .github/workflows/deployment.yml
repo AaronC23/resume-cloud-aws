@@ -11,8 +11,7 @@ jobs:
     steps:
       # Sync s3
       - name: sync s3
-      - uses: actions/checkout@master
-      - uses: jakejarvis/s3-sync-action@master
+        uses: jakejarvis/s3-sync-action@master
         with:
           args: --acl public-read --follow-symlinks --delete
         env:
@@ -24,7 +23,7 @@ jobs:
 
       # Invalidate CloudFront
       - name: Invalidate CloudFront
-      - uses: chetan/invalidate-cloudfront-action@v2
+        uses: chetan/invalidate-cloudfront-action@v2
         env:
           DISTRIBUTION: ${{ secrets.DISTRIBUTION }}
           PATHS: "src/index.html"
