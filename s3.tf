@@ -34,6 +34,15 @@ resource "aws_s3_bucket_policy" "bucket_policy" {
   )
 }
 
+
+resource "aws_s3_bucket_ownership_controls" "bucket_ownership" {
+  bucket = aws_s3_bucket.bucket.id
+
+  rule {
+    object_ownership = "BucketOwnerPreferred"
+  }
+}
+
 resource "aws_s3_object" "static_files" {
   for_each = module.template_files.files
 
