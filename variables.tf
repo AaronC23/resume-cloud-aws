@@ -18,3 +18,13 @@ variable "www_domain_name" {
   description = "www domain name for website"
   type        = string
 }
+
+variable "AWS_ACCESS_KEY_ID" {
+  type = string
+  default = ""
+}
+
+variable "AWS_SECRET_ACCESS_KEY" {
+  type = string
+  default = ""
+}
