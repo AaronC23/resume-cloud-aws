@@ -1,9 +1,47 @@
-The purpose of this repository is to complete the Cloud Resume Challenge in AWS. I will be planning to document my process throughout the challenge to gain a better understanding of lessons learnt and how I overcame any problems.
+<!-- ABOUT THE PROJECT -->
+## About The Project
 
-# AWS Architecture Diagram
+This is inspired by the [Cloud-Resume-Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/). The purpose was to build up my AWS skills outside of work and deploy a simple resume website via the cloud.
+
+### Built With
+
+* AWS Cloud Services
+* HTML
+* CSS (Tailwind)
+* Terraform (Infrastructure as Code)
+
+## AWS Architecture Diagram
 
 ![AWS Cloud Resume](https://github.com/AaronC23/resume-cloud-aws/assets/28281365/e6845b72-be08-47b1-bb9f-885f230280b2)
 
-# Components
+## AWS Components
 
-TODO Discuss Each component :) 
+### Route 53
+
+### Cloudfront
+
+### S3
+
+### API Gateway
+
+### Lambda
+
+### DynamoDB
+
+## Terraform
+
+## Github Actions
+
+<!-- ROADMAP -->
+## Roadmap
+
+- [ ] Add mobile support
+- [ ] Tidy up CSS!
+- [ ] Add About Page to Website
+
+<!-- CONTACT -->
+## Contact
+
+Aaron Clark - aaronclarkofficial@gmail.com
+
+Project Link: [https://github.com/AaronC23/resume-cloud-aws](https://github.com/AaronC23/resume-cloud-aws)
