@@ -7,16 +7,10 @@
     <title>Hello @ Aaron Clark</title>
     <script type="text/javascript" src="api.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Replace the link above with your own Tailwind CSS file if you're not using a CDN -->
 </head>
 
 <body class="bg-gray-100">
-    <!-- Container = ??
-        mx-auto centres the container into middle of screen>
-        xl
-    -->
-
-    <div class="grid grid-cols-7 m-0 gap-0 p-4 container w-full mx-auto">
+    <div class="grid grid-cols-5 lg:grid-cols-7 m-0 gap-0 p-4 container w-full mx-auto">
         <!-- Contact Information / Skills Column -->
         <div class="p-4 col-span-2 bg-green-100">
             <!-- Objective -->
@@ -24,7 +18,6 @@
                 <h1 class="text-2xl font-semibold ml-6 pb-1">Aaron Clark</h1>
                 <h2 class="text-xl font-semibold ml-6 pb-6">Full Stack Developer</h2>
                 <div>
-                    <!-- TODO icons for email and phone number -->
                     <h2 class="text font-semibold ml-6">Contact Information</h2>
                     <div class="mb-4">
                         <h3 class="text-base ml-6">aaronclarkofficial@gmail.com | 0437324945</h3>
@@ -32,10 +25,12 @@
                 </div>
                 <h2 class="text font-semibold ml-6 pb-4">Objective</h2>
                 <p class="text-left ml-6 pb-4">Software Engineer with 3 years of full-stack
-                    development, passionate about delivering enjoyable user experiences in React and VueJS. Experience
+                    development, passionate about delivering enjoyable user experiences in React and VueJS.
+                    Experience
                     in managing deployments of Kubernetes and Docker containers to
                     produce highly available and elegant solutions. Experience in engineering real-time Java
-                    microservices and PostgreSQL database design. Enthusiastic and committed to continuously learning
+                    microservices and PostgreSQL database design. Enthusiastic and committed to continuously
+                    learning
                     and growing as an engineer.
                 </p>
             </div>
@@ -84,7 +79,7 @@
         </div>
 
         <!-- Work Experience Column -->
-        <div class="p-4 col-span-5 bg-white">
+        <div class="p-4 col-span-3 lg:col-span-5 bg-white">
             <div class="text-left">
                 <h2 class="text-xl font-semibold ml-6">Work Experience</h2>
                 <hr class="mb-4">
@@ -96,27 +91,33 @@
                         <li class="ml-6">Led the implementation and design of a Java microservice to enable users to
                             display
                             an overall data
-                            source health. Undertook the seamless integration of REST APIs and handling of data fetch
+                            source health. Undertook the seamless integration of REST APIs and handling of data
+                            fetch
                             and
-                            rendering in React. Collaborated with backend developers to define endpoints in Open API and
+                            rendering in React. Collaborated with backend developers to define endpoints in Open API
+                            and
                             performed diagnosis of bugs and issues.</li>
                         <li class="ml-6">
-                            Performed rapid development and testing of Docker containerised microservices in a KANBAN
+                            Performed rapid development and testing of Docker containerised microservices in a
+                            KANBAN
                             environment via Rancher and Kubernetes.
                         </li>
                         <li class="ml-6">
-                            Monitored, diagnosed and resolved issues with Jenkins pipelines and builds to ensure minimal
+                            Monitored, diagnosed and resolved issues with Jenkins pipelines and builds to ensure
+                            minimal
                             downtime for other developers.
                         </li>
                         <li class="ml-6">
                             Co-authored and reviewed a formal Software Test document. Identified gaps in untested
                             functionality
-                            and developed tests to address them. Performed refactoring of code to pass failing tests,
+                            and developed tests to address them. Performed refactoring of code to pass failing
+                            tests,
                             achieving 80%
                             test and passing coverage
                         </li>
                         <li class="ml-6">
-                            Facilitated stakeholder discussions to prototype and refine mock user interfaces, delivering
+                            Facilitated stakeholder discussions to prototype and refine mock user interfaces,
+                            delivering
                             intuitive and
                             polished designs align with stakeholder needs
                         </li>
@@ -133,15 +134,18 @@
                     <ul class="list-disc ml-6 mb-4">
                         <li class="ml-6">
                             Developed a Java microservice to automate scheduling and tracking of potential satellite
-                            passes for ground stations, eliminating the need for manual operation. Managed orchestration
+                            passes for ground stations, eliminating the need for manual operation. Managed
+                            orchestration
                             of service with Ansible playbooks.
                         </li>
                         <li class="ml-6">
-                            Crafted a dynamic and real-time visualisation UI of satellite orbits in VueJS and Cesium.
+                            Crafted a dynamic and real-time visualisation UI of satellite orbits in VueJS and
+                            Cesium.
                             Providing operators with the ability to simulate orbit paths for hundreds of satellites
                         </li>
                         <li class="ml-6">
-                            Developed NoSQL queries to visualise payload telemetry data in Grafana to enable operators
+                            Developed NoSQL queries to visualise payload telemetry data in Grafana to enable
+                            operators
                             to perform satellite diagnosis.
                         </li>
                     </ul>
@@ -150,7 +154,8 @@
                     <p class="text-gray-600 ml-6">Nov 2019 - Feb 2020</p>
                     <ul class="list-disc ml-6 mb-4">
                         <li class="ml-6">
-                            Engineered a software prototype to parse and extract information from website forums with
+                            Engineered a software prototype to parse and extract information from website forums
+                            with
                             JSoup
                             and Java.
                         </li>
@@ -162,10 +167,16 @@
                     <h2 class="text-xl font-semibold ml-6">Projects</h2>
                     <hr class="mb-4">
                     <h3 class="text-lg font-semibold ml-6">AWS Cloud Resume Hosting</h3>
-                    <p class="text-gray-600 ml-6">GitHub Link: https://github.com/AaronC23/resume-cloud-aws</p>
+                    <p class="text-gray-600 ml-6">
+                        GitHub:
+                        <a href="https://github.com/AaronC23/resume-cloud-aws" class="text-blue-600">
+                            https://github.com/AaronC23/resume-cloud-aws
+                        </a>
+                    </p>
                     <ul class="list-disc ml-6 mb-4">
                         <li class="ml-6">
-                            Hosted static website via AWS S3, Cloudfront, and Route 53. Dynamic visitor counter stored
+                            Hosted static website via AWS S3, Cloudfront, and Route 53. Dynamic visitor counter
+                            stored
                             in Dynamo DB and updated via API Gateway and Lambda.
                         </li>
                         <li class="ml-6">
