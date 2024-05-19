@@ -3,6 +3,8 @@
 
 This is inspired by the [Cloud-Resume-Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/). The purpose was to build up my AWS skills outside of work and deploy a simple resume website via the cloud.
 
+The website can be found at: https://aaron-clark-dev.com
+
 ### Built With
 
 * AWS Cloud Services
@@ -36,7 +38,17 @@ Terraform was fully utilised to configure and provision all AWS services.
 
 ## Github Actions
 
+When a PR is created, the GitHub actions will perform a terraform plan to preview any infrastructure changes for AWS.
 
+![Example PR GitHub actions](https://github.com/AaronC23/resume-cloud-aws/assets/28281365/333af35a-74ab-4ed1-8171-664a2cb2ef47)
+
+On merge to master the GitHub actions perform the following:
+   
+   * terraform apply (auto approve)
+   * S3 sync static files (HTML/CSS/JS) 
+   * Invalidate the cloudfront cache to reload any HTML changes (if needed)
+
+![Example merge to main GitHub actinos](https://github.com/AaronC23/resume-cloud-aws/assets/28281365/d6a60310-bde9-4610-82b1-22bfddb34315)
 
 <!-- ROADMAP -->
 ## Roadmap
