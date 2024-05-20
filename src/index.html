@@ -10,9 +10,9 @@
 </head>
 
 <body class="bg-gray-100">
-    <div class="grid grid-cols-5 lg:grid-cols-7 m-0 gap-0 p-4 container w-full mx-auto">
+    <div class="grid grid-cols-6 lg:grid-cols-7 md-grid-cols-7 m-0 gap-0 p-4 container w-full mx-auto">
         <!-- Contact Information / Skills Column -->
-        <div class="p-4 col-span-2 bg-green-100">
+        <div class="p-4 col-span-3 bg-green-100">
             <!-- Objective -->
             <div>
                 <h1 class="text-2xl font-semibold ml-6 pb-1">Aaron Clark</h1>
@@ -20,18 +20,19 @@
                 <div>
                     <h2 class="text font-semibold ml-6">Contact Information</h2>
                     <div class="mb-4">
-                        <h3 class="text-base ml-6">aaronclarkofficial@gmail.com | 0437324945</h3>
+                        <h3 class="ml-6 text-wrap overflow-hidden break-words">aaronclarkofficial@gmail.com</h3>
+                        <h3 class="text-base ml-6">0437324945</h3>
                     </div>
                 </div>
                 <h2 class="text font-semibold ml-6 pb-4">Objective</h2>
-                <p class="text-left ml-6 pb-4">Software Engineer with 3 years of full-stack
-                    development, passionate about delivering enjoyable user experiences in React and VueJS.
-                    Experience
-                    in managing deployments of Kubernetes and Docker containers to
-                    produce highly available and elegant solutions. Experience in engineering real-time Java
-                    microservices and PostgreSQL database design. Enthusiastic and committed to continuously
-                    learning
-                    and growing as an engineer.
+                <p class="text-left ml-6 pb-4">Results driven Software Engineer with 3 years of full-stack development,
+                    passionate about delivering enjoyable
+                    user experiences in React and VueJS. Track record of developing Vert.X real-time event based Java
+                    micro-
+                    services with Kafka and PostgreSQL database design. Proficiency in Terraform and AWS technologies
+                    used
+                    to host a cloud resume website. Enthusiastic and committed to continously learning and growing as an
+                    engineer.
                 </p>
             </div>
             <!-- Skills -->
@@ -44,6 +45,9 @@
                         </li>
                         <li>
                             Kubernetes
+                        </li>
+                        <li>
+                            Apache Kafka
                         </li>
                         <li>
                             Docker
@@ -79,7 +83,7 @@
         </div>
 
         <!-- Work Experience Column -->
-        <div class="p-4 col-span-3 lg:col-span-5 bg-white">
+        <div class="p-4 col-span-3 lg:col-span-5 md:col-span-3 bg-white">
             <div class="text-left">
                 <h2 class="text-xl font-semibold ml-6">Work Experience</h2>
                 <hr class="mb-4">
@@ -88,44 +92,33 @@
                     <p class="text-gray-600 ml-6">Full Stack Engineer / Graduate Engineer</p>
                     <p class="text-gray-600 ml-6">2022 - Present</p>
                     <ul class="list-disc ml-6 mb-4">
-                        <li class="ml-6">Led the implementation and design of a Java microservice to enable users to
-                            display
-                            an overall data
-                            source health. Undertook the seamless integration of REST APIs and handling of data
-                            fetch
+                        <li class="ml-6 text-wrap">Led the design and implementation of a Java microservice to improve
+                            clarity of
+                            data source health
+                            statistics for users. Undertook seamless integration of REST APIs and handling of data fetch
                             and
-                            rendering in React. Collaborated with backend developers to define endpoints in Open API
-                            and
-                            performed diagnosis of bugs and issues.</li>
-                        <li class="ml-6">
-                            Performed rapid development and testing of Docker containerised microservices in a
-                            KANBAN
-                            environment via Rancher and Kubernetes.
+                            rendering in React. Authored the definition of endpoints in Open API and PostgreSQL design
                         </li>
                         <li class="ml-6">
-                            Monitored, diagnosed and resolved issues with Jenkins pipelines and builds to ensure
-                            minimal
-                            downtime for other developers.
+                            Created definitions and handling of Apache Kafka messaging into existing microservice
+                            architecture to
+                            allow for event-driven flow.
                         </li>
                         <li class="ml-6">
-                            Co-authored and reviewed a formal Software Test document. Identified gaps in untested
-                            functionality
-                            and developed tests to address them. Performed refactoring of code to pass failing
-                            tests,
-                            achieving 80%
-                            test and passing coverage
+                            Reviewed a formal Software Test document and identified gaps in untested functionality.
+                            Developed
+                            JUnit tests to address gaps and performed refactoring of code to pass failing tests,
+                            achieving 90% test
+                            and passing coverage.
                         </li>
                         <li class="ml-6">
-                            Facilitated stakeholder discussions to prototype and refine mock user interfaces,
-                            delivering
+                            Performed rapid development and testing of Docker containerised microservices in a KANBAN
+                            environment with Rancher and Kubernetes.
+                        </li>
+                        <li class="ml-6">
+                            Facilitated stakeholder discussions to prototype and refine mock user interfaces, delivering
                             intuitive and
                             polished designs align with stakeholder needs
-                        </li>
-                        <li class="ml-6">
-                            Led boarding and mentoring support for new teammates, acting as a point of contact to
-                            address
-                            any
-                            inquiries or problems they faced
                         </li>
                     </ul>
                     <h3 class="text-lg font-semibold ml-6">Defence Science and Technology Group</h3>
@@ -180,8 +173,9 @@
                             in Dynamo DB and updated via API Gateway and Lambda.
                         </li>
                         <li class="ml-6">
-                            Terraform used to learn and utilise infrastructure as code principles, CI/CD of IaC and
-                            Front-End changes via GitHub Actions.
+                            Terraform used to learn and utilise infrastructure as code principles, CI/CD for AWS
+                            services and
+                            HTML/Tailwind CSS changes via GitHub Actions.
                         </li>
                     </ul>
                 </div>
