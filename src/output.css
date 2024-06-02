@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Cabinet Grotesk, sans-serf;
+  font-family: Space Grotesk, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -446,10 +446,6 @@ video {
   display: none;
 }
 
-html {
-  font-family: 'Cabinet Grotesk', sans-serif;
-}
-
 h1 {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -563,23 +559,27 @@ h1 {
   --tw-contain-style:  ;
 }
 
-.font-sans {
-  font-family: Cabinet Grotesk, sans-serf;
+.font-barlow {
+  font-family: Barlow, sans-serif;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
-.underline {
-  text-decoration-line: underline;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 @font-face {
-  font-family: 'Cabinet Grotesk', sans-serif;
+  font-family: "Barlow";
 
-  src: local('Cabinet Grotesk'), url(./fonts/CabinetGrotesk-Regular.ttf) format('ttf');
+  src: url("../fonts/Barlow-Thin.ttf");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+
+  font-weight: 300;
+
+  src: url("../fonts/SpaceGrotesk.ttf");
 }
 
 .title-heading {

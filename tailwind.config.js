@@ -3,7 +3,8 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
-      sans: ['Cabinet Grotesk', 'sans-serf'],
+      barlow: ["Barlow", "sans-serif"],
+      sans: ["Space Grotesk", "sans-serif"],
     },
     extend: {
       spacing: {

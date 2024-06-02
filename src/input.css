@@ -2,19 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../fonts/Barlow-Thin.ttf");
+  }
+
+@font-face {
+    font-family: "Space Grotesk";
+    font-weight: 300;
+    src: url("../fonts/SpaceGrotesk.ttf");
+}
+
 @layer base {
-    html {
-        font-family: 'Cabinet Grotesk', sans-serif;
-    }
     h1 {
         @apply text-3xl;
     }
 }
-
-@font-face {
-    font-family: 'Cabinet Grotesk', sans-serif;
-    src: local('Cabinet Grotesk'), url(./fonts/CabinetGrotesk-Regular.ttf) format('ttf');
-  }
 
 .title-heading {
     font-size: 1.25rem;
