@@ -46,7 +46,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Cabinet Grotesk, sans-serf;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -446,15 +446,6 @@ video {
   display: none;
 }
 
-html {
-  font-family: 'Cabinet Grotesk', sans-serif;
-}
-
-h1 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -563,8 +554,12 @@ h1 {
   --tw-contain-style:  ;
 }
 
-.font-sans {
-  font-family: Cabinet Grotesk, sans-serf;
+.m-2 {
+  margin: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .text-3xl {
@@ -572,23 +567,44 @@ h1 {
   line-height: 2.25rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
+.text-purple-600 {
+  --tw-text-opacity: 1;
+  color: rgb(147 51 234 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
 
-@font-face {
-  font-family: 'Cabinet Grotesk', sans-serif;
+/* @layer base {
+    html {
+        font-family: 'Cabinet Grotesk', sans-serif;
+    }
+    h1 {
+        @apply text-2xl;
+      }
+}
 
-  src: local('Cabinet Grotesk'), url(./fonts/CabinetGrotesk-Regular.ttf) format('ttf');
+@font-face {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    src: local('Cabinet Grotesk'), url(./fonts/CabinetGrotesk-Regular.ttf) format('ttf');
+  }
+
+.test-banana {
+    font-size: 5rem;
 }
 
 .title-heading {
-  font-size: 1.25rem;
-  line-height: 2rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
 }
 
 .default-spacing {
-  padding-top: 2.5rem;
-  padding-left: 10rem;
-  padding-right: 10rem;
-}
+    padding-top: 2.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+} */
