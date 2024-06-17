@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState } from "react";
 
 interface Navigation {
   name: string;
@@ -12,7 +11,6 @@ interface Navigation {
 export default function Navbar() {
   const pathname = usePathname();
 
-  const [name, setName] = useState("");
   const navMap: Navigation[] = [
     {
       name: "Home",
@@ -36,23 +34,30 @@ export default function Navbar() {
     <>
       <p className="font-barlow text-6xl">Aaron Clark</p>
       <p className="font-barlow text-lg pb-6">Developer</p>
-      <div className="flex flex-col items-start font-barlow space-y-4">
-        {navMap.map((page, index) => {
-          if (pathname === page.link) {
-            return (
-              <Link key={index} href={page.link}>
-                <p className="font-bold">.</p>
-              </Link>
-            );
-          }
-          return (
-            <Link key={index} href={page.link}>
-              {page.name}
-            </Link>
-          );
-        })}
+      <div className="font-barlow container h-full">
+        <div className="flex flex-col justify-between items-start h-full">
+          <ul className="hidden md:block gap-y-4 text-white">
+            {navMap.map((page, index) => {
+              if (pathname === page.link) {
+                return (
+                  <li key={index}>
+                    <Link key={index} href={page.link}>
+                      <p className="font-bold">.</p>
+                    </Link>
+                  </li>
+                );
+              }
+              return (
+                <li key={index}>
+                  <Link key={index} href={page.link}>
+                    {page.name}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </>
-    // </div>
   );
 }
