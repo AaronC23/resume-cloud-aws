@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import background from "./images/bg-image.jpg";
+import background from "./images/bg-image-2.jpg";
 import Navbar from "./navbar/navbar";
+import Image from "next/image";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,23 +21,23 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="p-10">
-          <div className="border border-1 border-gray-500 p-10 rounded-sm h-[calc(100vh-80px)]">
+          <div className="border border-1 border-gray-500 p-10 rounded-sm h-[calc(100vh-80px)] relative">
             <p className="font-barlow text-6xl">Aaron Clark</p>
             <p className="font-barlow text-lg pb-6">Developer</p>
             <main className="grid lg:grid-cols-2 grid-cols-2">
               <Navbar />
               {children}
               {/* /Work out the image later zz */}
-              {/* <Image
-                className="-z-10 opacity-80 h-[calc(100vh-80px)]"
+              <Image
+                className="-z-10 opacity-100"
                 alt="Background"
                 src={background}
+                layout="fill"
                 placeholder="blur"
-                fill
                 style={{
-                  objectFit: "cover",
+                  objectFit: "contain",
                 }}
-              /> */}
+              />
             </main>
           </div>
         </div>

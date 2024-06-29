@@ -62,6 +62,10 @@ body {
   .technologies {
     @apply font-light text-gray-500 pt-1;
   }
+
+  .scrollable {
+    @apply h-[calc(100vh-240px)] overflow-y-scroll;
+  }
 }
 
 a.hoverLink {

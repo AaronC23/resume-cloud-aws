@@ -5,11 +5,13 @@ const Projects = () => (
   <div>
     <div>
       <Image
+        className="-z-10"
         alt="Background"
         src={background}
         placeholder="blur"
         quality={100}
-        fill
+        width={100}
+        height={100}
         sizes="100vw"
         style={{
           objectFit: "cover",

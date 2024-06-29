@@ -21,7 +21,7 @@ export default function Navbar() {
       link: "/about",
     },
     {
-      name: "Projects",
+      name: "Project (s)",
       link: "/projects",
     },
     {
@@ -44,7 +44,7 @@ export default function Navbar() {
                       href={page.link}
                       className="pointer-events-none"
                     >
-                      <p className="font-bold">.</p>
+                      <p className="text-gray-400">&bull;</p>
                     </Link>
                   </li>
                 );
