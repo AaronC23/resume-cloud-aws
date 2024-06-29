@@ -49,3 +49,28 @@ body {
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .title {
+    @apply font-bold;
+  }
+
+  .description {
+    @apply font-light text-gray-400 pt-1;
+  }
+
+  .technologies {
+    @apply font-light text-gray-500 pt-1;
+  }
+}
+
+a.hoverLink {
+  filter: grayscale(100%);
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+a.hoverLink:hover {
+  scale: 1.05;
+  opacity: 0.5;
+}

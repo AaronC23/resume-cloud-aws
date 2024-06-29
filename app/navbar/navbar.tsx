@@ -31,17 +31,19 @@ export default function Navbar() {
   ];
 
   return (
-    <>
-      <p className="font-barlow text-6xl">Aaron Clark</p>
-      <p className="font-barlow text-lg pb-6">Developer</p>
-      <div className="font-barlow container h-full">
-        <div className="flex flex-col justify-between items-start h-full">
-          <ul className="hidden md:block gap-y-4 text-white">
+    <div className="z-50">
+      <div className="font-barlow font-bold container h-full">
+        <div className="flex flex-col items-start h-full">
+          <ul className="hidden md:block space-y-4">
             {navMap.map((page, index) => {
               if (pathname === page.link) {
                 return (
                   <li key={index}>
-                    <Link key={index} href={page.link}>
+                    <Link
+                      key={index}
+                      href={page.link}
+                      className="pointer-events-none"
+                    >
                       <p className="font-bold">.</p>
                     </Link>
                   </li>
@@ -49,7 +51,7 @@ export default function Navbar() {
               }
               return (
                 <li key={index}>
-                  <Link key={index} href={page.link}>
+                  <Link key={index} className="hoverLink" href={page.link}>
                     {page.name}
                   </Link>
                 </li>
@@ -58,6 +60,6 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-    </>
+    </div>
   );
 }
