@@ -41,7 +41,7 @@ export default function About() {
   ];
 
   return (
-    <div className="grid gap-4 scrollable">
+    <div className="grid gap-4 md:scrollable">
       <div className="font-barlow text-left columns-1">
         {experiences.map((exp, index) => {
           return (

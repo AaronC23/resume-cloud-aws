@@ -26,7 +26,7 @@ export default function RootLayout({
               Aaron Clark
             </p>
             <p className="font-barlow text-sm md:text-lg pb-6">Developer</p>
-            <main className="grid grid-cols-1 md:grid-cols-2">
+            <main className="scrollable grid grid-cols-1 gap-20 md:grid-cols-2">
               <Navbar />
               {children}
               <Image

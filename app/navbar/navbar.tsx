@@ -31,35 +31,31 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="z-50">
-      <div className="font-barlow font-bold container h-full">
-        <div className="flex md:flex-col items-start h-full">
-          <ul className="hidden md:block space-y-4">
-            {navMap.map((page, index) => {
-              if (pathname === page.link) {
-                return (
-                  <li key={index}>
-                    <Link
-                      key={index}
-                      href={page.link}
-                      className="pointer-events-none"
-                    >
-                      <p className="text-gray-400">&bull;</p>
-                    </Link>
-                  </li>
-                );
-              }
-              return (
-                <li key={index}>
-                  <Link key={index} className="hoverLink" href={page.link}>
-                    {page.name}
-                  </Link>
-                </li>
-              );
-            })}
-          </ul>
-        </div>
-      </div>
+    <div className="font-barlow font-bold md:scrollable space-y-4">
+      <ul className="md:block space-y-4">
+        {navMap.map((page, index) => {
+          if (pathname === page.link) {
+            return (
+              <li key={index}>
+                <Link
+                  key={index}
+                  href={page.link}
+                  className="pointer-events-none"
+                >
+                  <p className="text-gray-400">&bull;</p>
+                </Link>
+              </li>
+            );
+          }
+          return (
+            <li key={index}>
+              <Link key={index} className="hoverLink" href={page.link}>
+                {page.name}
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }

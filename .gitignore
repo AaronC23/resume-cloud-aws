@@ -4,3 +4,4 @@ scripts/*.zip
 terraform.tfstate*
 .DS_STORE
 .next/
+package-lock.json
