@@ -22,20 +22,21 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="p-10">
           <div className="border border-1 border-gray-500 p-10 rounded-sm h-[calc(100vh-80px)] relative">
-            <p className="font-barlow text-6xl">Aaron Clark</p>
-            <p className="font-barlow text-lg pb-6">Developer</p>
-            <main className="grid lg:grid-cols-2 grid-cols-2">
+            <p className="font-barlow text-2xl md:text-5xl lg:text-6xl">
+              Aaron Clark
+            </p>
+            <p className="font-barlow text-sm md:text-lg pb-6">Developer</p>
+            <main className="grid grid-cols-1 md:grid-cols-2">
               <Navbar />
               {children}
-              {/* /Work out the image later zz */}
               <Image
-                className="-z-10 opacity-100"
+                className="-z-10 opacity-60"
                 alt="Background"
                 src={background}
                 layout="fill"
                 placeholder="blur"
                 style={{
-                  objectFit: "contain",
+                  objectFit: "cover",
                 }}
               />
             </main>

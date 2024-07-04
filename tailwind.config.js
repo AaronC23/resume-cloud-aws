@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       barlow: ["Barlow", "sans-serif"],
-      sans: ["Space Grotesk", "sans-serif"],
+      sans: ["Barlow", "sans-serif"],
     },
     extend: {
       spacing: {

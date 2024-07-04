@@ -33,7 +33,7 @@ export default function Navbar() {
   return (
     <div className="z-50">
       <div className="font-barlow font-bold container h-full">
-        <div className="flex flex-col items-start h-full">
+        <div className="flex md:flex-col items-start h-full">
           <ul className="hidden md:block space-y-4">
             {navMap.map((page, index) => {
               if (pathname === page.link) {
