@@ -1,6 +1,6 @@
 const Projects = () => (
   <div>
-    <div className="font-barlow scrollable">I'm a projects page!</div>
+    <div className="scrollable">I'm a projects page!</div>
   </div>
 );
 

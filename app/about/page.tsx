@@ -41,20 +41,18 @@ export default function About() {
   ];
 
   return (
-    <div className="grid gap-4 md:scrollable">
-      <div className="font-barlow text-left columns-1">
-        {experiences.map((exp, index) => {
-          return (
-            <Experience
-              title={exp.title}
-              description={exp.description}
-              technologies={exp.technologies}
-              date={exp.date}
-              key={index}
-            />
-          );
-        })}
-      </div>
+    <div className="grid scrollable scrollbar-hide h-[calc(100vh-195px) text-left columns-1">
+      {experiences.map((exp, index) => {
+        return (
+          <Experience
+            title={exp.title}
+            description={exp.description}
+            technologies={exp.technologies}
+            date={exp.date}
+            key={index}
+          />
+        );
+      })}
     </div>
   );
 }

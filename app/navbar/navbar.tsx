@@ -31,8 +31,8 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="font-barlow font-bold md:scrollable space-y-4">
-      <ul className="md:block space-y-4">
+    <div className="font-bold default-height md:scrollable">
+      <ul className="md:block text-xs md:text-sm space-y-2">
         {navMap.map((page, index) => {
           if (pathname === page.link) {
             return (

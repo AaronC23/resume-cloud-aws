@@ -11,6 +11,16 @@ module.exports = {
       sans: ["Barlow", "sans-serif"],
     },
     extend: {
+      fontSize: {
+        xs: '0.4rem',
+        sm: '0.6rem',
+        base: '0.8rem',
+        xl: '1.25rem',
+        '2xl': '1.563rem',
+        '3xl': '1.953rem',
+        '4xl': '2.441rem',
+        '5xl': '3.052rem',
+      },
       spacing: {
         '5px': '5px',
       },
@@ -44,5 +54,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide')
+  ],
 }

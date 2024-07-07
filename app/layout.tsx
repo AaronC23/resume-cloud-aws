@@ -20,13 +20,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="p-10">
-          <div className="border border-1 border-gray-500 p-10 rounded-sm h-[calc(100vh-80px)] relative">
-            <p className="font-barlow text-2xl md:text-5xl lg:text-6xl">
-              Aaron Clark
-            </p>
-            <p className="font-barlow text-sm md:text-lg pb-6">Developer</p>
-            <main className="scrollable grid grid-cols-1 gap-20 md:grid-cols-2">
+        <div className="p-10 font-barlow">
+          <div className="border border-1 border-gray-500 p-5 md:p-10 rounded-sm h-[calc(100vh-90px)]">
+            <p className="text-base md:text-5xl lg:text-6xl">Aaron Clark</p>
+            <p className="text-xs md:text-lg pb-3 md:pb-6">Developer</p>
+            <main className="scrollable scrollbar-hide grid grid-cols-1 gap-20 sm:grid-cols-2 md:grid-cols-2">
               <Navbar />
               {children}
               <Image
@@ -40,6 +38,9 @@ export default function RootLayout({
                 }}
               />
             </main>
+          </div>
+          <div className="text-xs text-right">
+            Developed in NextJS, TailwindCSS and deployed with AWS.
           </div>
         </div>
       </body>

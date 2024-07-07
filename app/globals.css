@@ -64,7 +64,11 @@ body {
   }
 
   .scrollable {
-    @apply h-[calc(100vh-240px)] overflow-y-scroll;
+    @apply overflow-y-scroll h-[calc(100vh-170px)] md:h-[calc(100vh-240px)];
+  }
+
+  .default-height {
+    @apply h-[calc(100vh-195px)];
   }
 }
 
