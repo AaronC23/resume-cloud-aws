@@ -24,7 +24,7 @@ export default function RootLayout({
           <div className="border border-1 border-gray-500 p-5 md:p-10 rounded-sm h-[calc(100vh-90px)]">
             <p className="text-base md:text-5xl lg:text-6xl">Aaron Clark</p>
             <p className="text-xs md:text-lg pb-3 md:pb-6">Developer</p>
-            <main className="scrollable scrollbar-hide grid grid-cols-1 gap-20 sm:grid-cols-2 md:grid-cols-2">
+            <main className="h-[calc(100vh-170px)] scrollable scrollbar-hide grid grid-cols-1 gap-10 xs:grid-cols-2 md:grid-cols-2">
               <Navbar />
               {children}
               <Image

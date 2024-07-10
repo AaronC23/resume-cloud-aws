@@ -11,7 +11,7 @@ export default function Home() {
     setVisitorCount("You are the " + count + " visitor.");
   }, []);
   return (
-    <div className="md:scrollable text-xs sm:text-lg md:text-lg">
+    <div className="md:scrollable default-height text-xs sm:text-lg md:text-lg">
       Welcome! I am Aaron Clark, a Full Stack Software Engineer based in
       Adelaide. I believe in creating a seamless and tailored experiences for
       users.

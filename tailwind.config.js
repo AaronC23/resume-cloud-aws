@@ -21,6 +21,9 @@ module.exports = {
         '4xl': '2.441rem',
         '5xl': '3.052rem',
       },
+      screens: {
+        'xs': '420px',
+      },
       spacing: {
         '5px': '5px',
       },
