@@ -22,11 +22,15 @@ export default function RootLayout({
       <body className={inter.className}>
         <div className="p-10 font-barlow">
           <div className="border border-1 border-gray-500 p-5 md:p-10 rounded-sm h-[calc(100vh-90px)]">
-            <p className="text-base md:text-5xl lg:text-6xl">Aaron Clark</p>
+            <p className="text-base sm:text-2xl md:text-5xl lg:text-6xl">
+              Aaron Clark
+            </p>
             <p className="text-xs md:text-lg pb-3 md:pb-6">Developer</p>
-            <main className="h-[calc(100vh-170px)] scrollable scrollbar-hide grid grid-cols-1 gap-10 xs:grid-cols-2 md:grid-cols-2">
-              <Navbar />
-              {children}
+            <main className="grid grid-cols-3 gap-10 h-[calc(100vh-170px)]">
+              <div className="col-span-1">
+                <Navbar />
+              </div>
+              <div className="col-span-2">{children}</div>
               <Image
                 className="-z-10 opacity-60"
                 alt="Background"

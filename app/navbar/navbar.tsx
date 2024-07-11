@@ -31,7 +31,7 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="font-bold default-height md:scrollable">
+    <div className="font-bold scrollable scrollbar-hide h-[calc(100vh-170px)]">
       <ul className="text-xs space-y-2 md:block md:text-sm">
         {navMap.map((page, index) => {
           if (pathname === page.link) {
