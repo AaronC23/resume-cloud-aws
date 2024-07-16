@@ -24,15 +24,11 @@ export default function Navbar() {
       name: "Project (s)",
       link: "/projects",
     },
-    {
-      name: "Contact",
-      link: "/contact",
-    },
   ];
 
   return (
     <div className="font-bold scrollable scrollbar-hide h-[calc(100vh-170px)]">
-      <ul className="text-xs space-y-2 md:block md:text-sm">
+      <ul className="text-xxs space-y-1 md:block sm:text-sm">
         {navMap.map((page, index) => {
           if (pathname === page.link) {
             return (

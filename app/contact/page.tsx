@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div className="gap-y-1 grid text-xs md:text-2xl md:grid-cols-6 md:text-right">
-      <p className="md:col-span-5">
+    <div className="gap-y-1 grid text-xxs grid-cols-1 text-left">
+      <p>
         <a
           href="https://www.linkedin.com/in/aaron-clarky/"
           className="hoverLink"
@@ -11,7 +11,7 @@ export default function About() {
           LinkedIn
         </a>
       </p>
-      <p className="md:col-span-5">
+      <p>
         <a
           href="https://github.com/AaronC23/"
           className="hoverLink"
@@ -21,7 +21,7 @@ export default function About() {
           GitHub
         </a>
       </p>
-      <p className="md:col-span-5">
+      <p>
         <a
           href="mailto:aaronclarkofficial@gmail.com"
           className="hoverLink"

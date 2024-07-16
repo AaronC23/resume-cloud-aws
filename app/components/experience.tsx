@@ -8,7 +8,7 @@ export interface Props {
 
 export default function Experience(props: Props) {
   return (
-    <div className="pb-4 grid grid-cols-6 text-xxs sm:grid-cols-5 sm:text-base">
+    <div className="pb-4 grid grid-cols-6 text-xxs sm:grid-cols-6 sm:text-sm">
       <div className="col-span-2 md:cols-span-1">{props.date}</div>
       <div className="col-span-4 md:cols-span-4">
         <div className="title">{props.title}</div>

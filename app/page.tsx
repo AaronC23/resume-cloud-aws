@@ -9,13 +9,14 @@ export default function Home() {
   useEffect(() => {
     //TODO use api call :)
     let count: string = moment.localeData().ordinal(419);
-    setVisitorCount("You are the " + count + " visitor.");
+    setVisitorCount("P.S. You are the " + count + " visitor!");
   }, []);
   return (
-    <div className="md:scrollable text-xs sm:text-lg md:text-lg">
+    <div className="scrollable scrollbar-hide text-xxs h-[calc(100vh-170px)] sm:text-sm">
       Welcome! I am Aaron Clark, a Full Stack Software Engineer based in
-      Adelaide. I believe in creating a seamless and tailored experiences for
-      users.
+      Adelaide. I believe in creating seamless and tailored experiences for
+      users. I hope you enjoy your stay.
+      <br />
       {visitorCount}
     </div>
   );
