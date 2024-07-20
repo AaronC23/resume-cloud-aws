@@ -15,7 +15,9 @@ module.exports = {
         xxs: '0.3rem',
         xs: '0.4rem',
         sm: '0.5rem',
+        m: '0.65rem',
         base: '0.8rem',
+        l: '1rem',
         xl: '1.25rem',
         '2xl': '1.563rem',
         '3xl': '1.953rem',
@@ -24,6 +26,7 @@ module.exports = {
       },
       screens: {
         'xs': '420px',
+        's': '520px',
       },
       spacing: {
         '5px': '5px',
