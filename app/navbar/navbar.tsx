@@ -32,7 +32,7 @@ export default function Navbar() {
 
   return (
     <div className="font-bold scrollable scrollbar-hide h-[calc(100vh-170px)]">
-      <ul className="text-xxs space-y-1 md:block sm:text-sm">
+      <ul className="text-xxs s:text-xs sm:text-sm md:text-m lg:text-base xl:text-l 2xl:text-xl space-y-1 sm:space-y-2 md:space-y-3 xl:space-y-4 md:block">
         {navMap.map((page, index) => {
           if (pathname === page.link) {
             return (
