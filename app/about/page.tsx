@@ -41,7 +41,7 @@ export default function About() {
   ];
 
   return (
-    <div className="grid col-span-2 scrollable scrollbar-hide h-[calc(100vh-170px)] text-left columns-1">
+    <div className="grid col-span-2 scrollable scrollbar-hide h-[calc(100vh-170px)] s:h-[calc(100vh-190px)] sm:h-[calc(100vh-210px)] md:h-[calc(100vh-230px)] lg:h-[calc(100vh-260px)] xl:-[calc(100vh-300px)] 2xl:-[calc(100vh-300px)] text-left columns-1">
       {experiences.map((exp, index) => {
         return (
           <Experience

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
   return (
-    <div className="gap-y-1 grid text-xxs grid-cols-1 text-left">
+    <div className="gap-y-1 grid text-xxs s:text-xs sm:text-m md:text-base lg:text-l xl:text-xl 2xl:text-1.5xl grid-cols-1 text-right">
       <a
         href="mailto:aaronclarkofficial@gmail.com"
         className="hoverLink"

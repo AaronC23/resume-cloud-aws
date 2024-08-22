@@ -86,7 +86,7 @@ a.hoverLink {
 }
 
 a.hoverLink:hover {
-  scale: 1.05;
+  scale: 1;
   opacity: 0.5;
 }
 
