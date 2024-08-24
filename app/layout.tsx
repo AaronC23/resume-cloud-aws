@@ -34,7 +34,7 @@ export default function RootLayout({
             <p className="text-xxs xs:text-xs sm:text-m s:text-sm md:text-base lg:text-l xl:text-xl 2xl:text-2xl pb-3 md:pb-6">
               Developer
             </p>
-            <main className="grid grid-cols-3 gap-10 h-[calc(100vh-170px)] lg:h-[calc(100vh-300px)]">
+            <main className="grid grid-cols-3 gap-10 h-[calc(100vh-170px)] lg:h-[calc(100vh-300px)] xl:h-[calc(100vh-400px)]">
               <div className="col-span-1">
                 <Navbar />
               </div>
@@ -51,17 +51,22 @@ export default function RootLayout({
               />
             </main>
           </div>
-
+          {/* space-x-3 for 2xl */}
           <div className="flex items-center justify-between text-xxs xs:text-xs s:text-sm sm:text-m md:text-base lg:text-l xl:text-xl">
-            <div className="flex space-x-3">
+            <div className="flex space-x-1">
               <a
                 href="mailto:aaronclarkofficial@gmail.com"
-                className="hoverLink flex items-center"
+                className="hoverLink items-center"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Mail
-                <FontAwesomeIcon icon={faEnvelope} size="xs" className="ml-2" />
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  fixedWidth
+                  size="xs"
+                  className="ml-2"
+                />
               </a>
               <a
                 href="https://www.linkedin.com/in/aaron-clarky/"
@@ -70,7 +75,12 @@ export default function RootLayout({
                 rel="noopener noreferrer"
               >
                 LinkedIn
-                <FontAwesomeIcon icon={faLinkedin} size="xs" className="ml-2" />
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  fixedWidth
+                  size="xs"
+                  className="ml-2"
+                />
               </a>
               <a
                 href="https://github.com/AaronC23/"
@@ -79,7 +89,12 @@ export default function RootLayout({
                 rel="noopener noreferrer"
               >
                 GitHub
-                <FontAwesomeIcon icon={faGithub} size="xs" className="ml-2" />
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  fixedWidth
+                  size="xs"
+                  className="ml-2"
+                />
               </a>
             </div>
 
