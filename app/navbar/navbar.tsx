@@ -21,12 +21,8 @@ export default function Navbar() {
       link: "/about",
     },
     {
-      name: "Contact",
-      link: "/contact",
-    },
-    {
-      name: "Project (s)",
-      link: "/projects",
+      name: "Tech Stack",
+      link: "/techstack",
     },
   ];
 
