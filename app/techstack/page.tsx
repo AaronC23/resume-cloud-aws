@@ -20,12 +20,13 @@ export default function About() {
     },
     {
       title: "Technologies",
-      technologies: "PostgreSQL, Docker, Kubernetes, Ansible, AWS, Terraform,",
+      technologies:
+        "PostgreSQL \u2022 Docker \u2022 Kubernetes \u2022 Ansible \u2022 AWS \u2022 Terraform",
     },
   ];
 
   return (
-    <div className="grid col-span-2 scrollable scrollbar-hide h-[calc(100vh-160px)] xs:h-[calc(100vh-170px)] s:h-[calc(100vh-200px)] sm:h-[calc(100vh-210px)] md:h-[calc(100vh-240px)] lg:h-[calc(100vh-320px)] xl:-[calc(100vh-400px)] 2xl:-[calc(100vh-300px)] text-left columns-1">
+    <div className="grid columns-1 col-span-2 scrollable scrollbar-hide aboutpage text-left">
       {experiences.map((exp, index) => {
         return (
           <Tech title={exp.title} technologies={exp.technologies} key={index} />
