@@ -27,13 +27,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="p-10 font-barlow">
-          <div className="border border-1 border-gray-500 p-5 md:p-7 rounded-sm h-[calc(100vh-90px)] s:h-[calc(100vh-100px)] lg:h-[calc(100vh-110px)]">
-            <p className="text-m xs:text-base s:text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-              Aaron Clark
-            </p>
-            <p className="text-xxs xs:text-xs sm:text-m s:text-sm md:text-base lg:text-l xl:text-xl 2xl:text-2xl pb-3 md:pb-6">
-              Developer
-            </p>
+          <div className="border-style border-height">
+            <p className="title-font">Aaron Clark</p>
+            <p className="subtext-font pb-3 md:pb-6">Developer</p>
             <main className="grid grid-cols-3 gap-10 h-[calc(100vh-170px)] lg:h-[calc(100vh-300px)] xl:h-[calc(100vh-400px)]">
               <div className="col-span-1">
                 <Navbar />
@@ -51,8 +47,7 @@ export default function RootLayout({
               />
             </main>
           </div>
-          {/* space-x-3 for 2xl */}
-          <div className="flex items-center justify-between text-xxs xs:text-xs s:text-sm sm:text-m md:text-base lg:text-l xl:text-xl">
+          <div className="flex items-center justify-between subtext-font">
             <div className="flex space-x-1">
               <a
                 href="mailto:aaronclarkofficial@gmail.com"

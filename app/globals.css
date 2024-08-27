@@ -84,14 +84,35 @@ body {
   @apply text-xxs;
 }
 
+.title-font {
+  @apply text-m;
+}
+
+.subtext-font {
+  @apply text-xxs;
+}
+
+.border-style {
+  @apply border border-gray-500 rounded-sm p-5 md:p-7;
+}
+
+.border-height {
+  @apply h-[calc(100vh-90px)];
+}
+
 @media (min-width: 420px) {
   /* xs */
   .aboutpage {
     @apply h-[calc(100vh-170px)];
   }
 
-  .experience-font {
+  .experience-font,
+  .subtext-font {
     @apply text-xs;
+  }
+
+  .title-font {
+    @apply text-base;
   }
 }
 
@@ -101,8 +122,17 @@ body {
     @apply h-[calc(100vh-200px)];
   }
 
-  .experience-font {
+  .experience-font,
+  .subtext-font {
     @apply text-sm;
+  }
+
+  .title-font {
+    @apply text-xl;
+  }
+
+  .border-height {
+    @apply h-[calc(100vh-100px)];
   }
 }
 
@@ -110,6 +140,14 @@ body {
   /* sm */
   .aboutpage {
     @apply h-[calc(100vh-210px)];
+  }
+
+  .subtext-font {
+    @apply text-m;
+  }
+
+  .title-font {
+    @apply text-2xl;
   }
 }
 
@@ -122,6 +160,14 @@ body {
   .experience-font {
     @apply text-m;
   }
+
+  .subtext-font {
+    @apply text-base;
+  }
+
+  .title-font {
+    @apply text-3xl;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -132,6 +178,18 @@ body {
 
   .experience-font {
     @apply text-base;
+  }
+
+  .subtext-font {
+    @apply text-l;
+  }
+
+  .title-font {
+    @apply text-4xl;
+  }
+
+  .border-height {
+    @apply h-[calc(100vh-110px)];
   }
 }
 
@@ -144,12 +202,24 @@ body {
   .experience-font {
     @apply text-l;
   }
+
+  .subtext-font {
+    @apply text-xl;
+  }
+
+  .title-font {
+    @apply text-5xl;
+  }
 }
 
 @media (min-width: 1536px) {
   /* 2xl */
   .aboutpage {
     @apply h-[calc(100vh-380px)];
+  }
+
+  .subtext-font {
+    @apply text-2xl;
   }
 
   .experience-font {
