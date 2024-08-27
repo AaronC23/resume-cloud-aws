@@ -22,13 +22,6 @@ export default function About() {
       title: "Technologies",
       technologies: "PostgreSQL, Docker, Kubernetes, Ansible, AWS, Terraform,",
     },
-    {
-      title: "Software Engineer Intern | Fivecast",
-      description:
-        "Worked with a small team to develop a web scraper and data parser from open source intelligence.",
-      technologies: "Java \u2022 Python \u2022 JSoup",
-      date: "Nov 2019 - Dec 2020",
-    },
   ];
 
   return (
