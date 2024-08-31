@@ -189,7 +189,7 @@ body {
   }
 
   .border-height {
-    @apply h-[calc(100vh-110px)];
+    @apply h-[calc(100vh-120px)];
   }
 }
 
