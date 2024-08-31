@@ -76,6 +76,10 @@ body {
   }
 }
 
+.homepage {
+  @apply h-[calc(100vh-170px)];
+}
+
 .aboutpage {
   @apply h-[calc(100vh-160px)] text-xxs;
 }
@@ -172,6 +176,10 @@ body {
 
 @media (min-width: 1024px) {
   /* lg */
+  .homepage {
+    @apply h-[calc(100vh-200px)];
+  }
+
   .aboutpage {
     @apply h-[calc(100vh-320px)];
   }
@@ -214,6 +222,10 @@ body {
 
 @media (min-width: 1536px) {
   /* 2xl */
+  .homepage {
+    @apply h-[calc(100vh-300px)];
+  }
+
   .aboutpage {
     @apply h-[calc(100vh-380px)];
   }
