@@ -2,6 +2,7 @@
 
 import moment from "moment";
 import { useEffect, useState } from "react";
+import SvgIcon from "@/app/icons/icon.svg";
 
 export default function Home() {
   const [visitorCount, setVisitorCount] = useState<string>("");
@@ -18,6 +19,7 @@ export default function Home() {
       users. I hope you enjoy your stay.
       <br />
       {visitorCount}
+      <SvgIcon width={25} height={25} />
     </div>
   );
 }
