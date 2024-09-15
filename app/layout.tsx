@@ -9,6 +9,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import ParticleBackground from "./components/particlebackground";
 
 const inter = Inter({ subsets: ["latin"] });
 config.autoAddCss = false;
@@ -26,11 +27,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>
+        {/* <div className="particles-js">
+          <ParticleBackground />
+        </div> */}
         <div className="p-10 font-barlow">
           <div className="border-style border-height">
             <p className="title-font">Aaron Clark</p>
             <p className="subtext-font pb-3 md:pb-6">Developer</p>
-            <main className="grid grid-cols-3 gap-10 h-[calc(100vh-170px)] lg:h-[calc(100vh-300px)] xl:h-[calc(100vh-400px)]">
+            <main className="grid grid-cols-3 gap-10 layout">
               <div className="col-span-1">
                 <Navbar />
               </div>
