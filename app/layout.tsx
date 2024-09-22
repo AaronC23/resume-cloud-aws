@@ -9,7 +9,6 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import ParticleBackground from "./components/particlebackground";
 
 const inter = Inter({ subsets: ["latin"] });
 config.autoAddCss = false;
