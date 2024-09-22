@@ -35,7 +35,7 @@ export default function RootLayout({
           <div className="border-style border-height">
             <p className="title-font">Aaron Clark</p>
             <p className="subtext-font pb-3 md:pb-6">Developer</p>
-            <main className="grid grid-cols-3 gap-10 layout">
+            <main className="grid grid-cols-3 gap-5 layout">
               <div className="col-span-1">
                 <Navbar />
               </div>
