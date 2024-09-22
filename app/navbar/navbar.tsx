@@ -27,8 +27,8 @@ export default function Navbar() {
   ];
 
   return (
-    <div className="font-bold scrollable scrollbar-hide h-[calc(100vh-160px)] s:h-[calc(100vh-200px)] md:h-[calc(100vh-240px)] lg:h-[calc(100vh-260px)] xl:h-[calc(100vh-280px)] 2xl:h-[calc(100vh-300px)]">
-      <ul className="text-xxs s:text-xs sm:text-sm md:text-m lg:text-base xl:text-l 2xl:text-xl space-y-1 sm:space-y-2 md:space-y-3 xl:space-y-4 md:block">
+    <div className="font-bold scrollable scrollbar-hide aboutpage">
+      <ul className="navbar-font navbar-spacing md:block">
         {navMap.map((page, index) => {
           if (pathname === page.link) {
             return (

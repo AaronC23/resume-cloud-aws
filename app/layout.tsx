@@ -27,10 +27,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js "></script>
-        {/* <div className="particles-js">
-          <ParticleBackground />
-        </div> */}
         <div className="p-10 font-barlow">
           <div className="border-style border-height">
             <p className="title-font">Aaron Clark</p>

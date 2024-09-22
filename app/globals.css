@@ -77,15 +77,14 @@ body {
 }
 
 .homepage,
-.layout {
+.layout,
+.aboutpage {
   @apply h-[calc(100vh-160px)];
 }
 
-.aboutpage {
-  @apply h-[calc(100vh-160px)] text-xxs;
-}
-
 .experience-font,
+.navbar-font,
+.subtext-font,
 .icons {
   @apply text-xxs;
 }
@@ -94,16 +93,16 @@ body {
   @apply text-m;
 }
 
-.subtext-font {
-  @apply text-xxs;
-}
-
 .border-style {
   @apply border border-gray-500 rounded-sm p-5 md:p-7;
 }
 
 .border-height {
   @apply h-[calc(100vh-90px)];
+}
+
+.navbar-spacing {
+  @apply space-y-1;
 }
 
 @media (min-width: 420px) {
@@ -128,7 +127,8 @@ body {
     @apply h-[calc(100vh-200px)];
   }
 
-  .icons {
+  .icons,
+  .navbar-font {
     @apply text-xs;
   }
 
@@ -152,6 +152,14 @@ body {
     @apply h-[calc(100vh-210px)];
   }
 
+  .navbar-font {
+    @apply text-sm;
+  }
+
+  .navbar-spacing {
+    @apply: space-y-2;
+  }
+
   .subtext-font,
   .icons {
     @apply text-m;
@@ -168,13 +176,18 @@ body {
     @apply h-[calc(100vh-280px)];
   }
 
-  .experience-font {
+  .experience-font,
+  .navbar-font {
     @apply text-m;
   }
 
   .subtext-font,
   .icons {
     @apply text-base;
+  }
+
+  .navbar-spacing {
+    @apply: space-y-3;
   }
 
   .title-font {
@@ -200,7 +213,8 @@ body {
     @apply h-[calc(100vh-120px)];
   }
 
-  .experience-font {
+  .experience-font,
+  .navbar-font {
     @apply text-base;
   }
 
@@ -212,23 +226,6 @@ body {
   .title-font {
     @apply text-4xl;
   }
-
-  #particles-js {
-    height: 50%;
-    width: 100%;
-    position: fixed;
-    z-index: -100;
-    top: 0;
-    left: 0;
-  }
-
-  /* .particles-js {
-    position: absolute;
-    background-color: #b61924;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 30%;
-  } */
 }
 
 @media (min-width: 1280px) {
@@ -241,8 +238,13 @@ body {
     @apply h-[calc(100vh-400px)];
   }
 
-  .experience-font {
+  .experience-font,
+  .navbar-font {
     @apply text-l;
+  }
+
+  .navbar-spacing {
+    @apply: space-y-4;
   }
 
   .subtext-font,
@@ -270,6 +272,7 @@ body {
   }
 
   .experience-font,
+  .navbar-font,
   .icons {
     @apply text-1.5xl;
   }
