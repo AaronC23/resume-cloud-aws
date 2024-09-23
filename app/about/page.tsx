@@ -12,7 +12,7 @@ export default function About() {
     {
       title: "Space Software Engineer | Saab",
       description:
-        "Engineering elegant solutions for Space Domain Awareness Software.",
+        "Engineering elegant solutions for a Space Domain Awareness Software.",
       technologies: "React \u2022 Java (Vert.X) \u2022 Kubernetes \u2022 Kafka",
       date: "Jan 2023 - Present",
     },

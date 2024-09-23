@@ -264,7 +264,7 @@ body {
   }
 
   .aboutpage {
-    @apply h-[calc(100vh-380px)];
+    @apply h-[calc(100vh-400px)];
   }
 
   .subtext-font {
