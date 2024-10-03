@@ -1,4 +1,5 @@
 import boto3
+import json
 
 client = boto3.client('dynamodb')
 dynamodb = boto3.resource("dynamodb")
@@ -11,11 +12,13 @@ def lambda_handler(event, context):
         ExpressionAttributeValues={':val': 1},
         ReturnValues="UPDATED_NEW"
     )
-
+    
     # Return the updated view count
     return {
         'statusCode': 200,
-        'body': str(response['Attributes']['view_count']),
+        'body': json.dumps({
+                'view_count': str(response['Attributes']['view_count']),
+            }),
         'headers': {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin' : '*'

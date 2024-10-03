@@ -6,7 +6,7 @@ export interface Props {
   company?: string;
 }
 
-export default function Experience(props: Props) {
+export default async function Experience(props: Props) {
   return (
     <div className="pb-4 grid grid-cols-6 experience-font">
       <div className="col-span-2 md:cols-span-1">{props.date}</div>
