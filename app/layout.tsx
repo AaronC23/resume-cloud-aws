@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import background from "./images/bg-image-2.jpg";
-import Navbar from "./navbar/navbar";
+import background from "@/images/bg-image-2.jpg";
+import Navbar from "@/components/navbar";
 import Image from "next/image";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -96,7 +96,6 @@ export default function RootLayout({
                 />
               </a>
             </div>
-
             <div className="text-right">
               Developed in NextJS, TailwindCSS and deployed with AWS.
             </div>

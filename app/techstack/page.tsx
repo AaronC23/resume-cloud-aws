@@ -1,12 +1,12 @@
-import Tech from "../components/tech";
+import Tech from "../../components/tech";
 
-// todo fix later lol
+// todo fix later 
 interface TechStack {
   title: string;
   technologies: string;
 }
 
-export default function About() {
+export default function Page() {
   const experiences: TechStack[] = [
     {
       title: "Programming languages",

@@ -1,4 +1,4 @@
-import Experience from "../components/experience";
+import Experience from "@/components/experience";
 
 interface JobExperience {
   title: string;
@@ -7,7 +7,7 @@ interface JobExperience {
   date: string;
 }
 
-export default function About() {
+export default function Page() {
   const experiences: JobExperience[] = [
     {
       title: "Space Software Engineer | Saab",
