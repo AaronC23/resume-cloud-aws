@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import moment from "moment";
-import CountUp from 'react-countup';
+import CountUp from "react-countup";
 
 export default function Page() {
   const [visitorCount, setVisitorCount] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     fetch(
@@ -15,6 +16,7 @@ export default function Page() {
       .then((res) => {
         let numberCount: number = res.viewCount;
         let count: string = moment.localeData().ordinal(res.viewCount);
+        setIsLoading(false);
         setVisitorCount(numberCount);
       });
   }, []);
@@ -26,22 +28,13 @@ export default function Page() {
       users. I hope you enjoy your stay.
       <br />
       <div>
-        <CountUp
-          start={0}
-          end={visitorCount}
-          duration={4.75}
-          separator=" "
-          prefix="Visit Count: "
-          onEnd={() => console.log('Ended! 👏')}
-          onStart={() => console.log('Started! 💨')}
-        >
-          {({ countUpRef, start }) => (
-            <div>
-              <span ref={countUpRef} />
-              <div></div>
-            </div>
-          )}
-        </CountUp>
+        {isLoading ? (
+          <p>Loading...</p> // Show loading text while fetching data
+        ) : (
+          <div>
+            <p>Data loaded! Visitor count is: {visitorCount}</p>
+          </div>
+        )}
       </div>
     </div>
   );
