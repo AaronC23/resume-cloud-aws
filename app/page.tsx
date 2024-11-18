@@ -2,29 +2,34 @@
 
 import { useEffect, useState } from "react";
 import moment from "moment";
-import CountUp from "react-countup";
+import { motion } from "framer-motion";
 
 export default function Page() {
   const [visitorCount, setVisitorCount] = useState("");
   const [isLoading, setIsLoading] = useState(true);
+  const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     const storedVisitorCount = sessionStorage.getItem("visitorCount");
     const hasFetched = sessionStorage.getItem("hasFetched");
 
+    if (!process.env.NEXT_PUBLIC_API_URL) {
+      setIsLoading(false);
+      setVisitorCount("???");
+      return;
+    }
+
     if (hasFetched) {
       setIsLoading(false);
       setVisitorCount(storedVisitorCount!);
     } else {
-      fetch(
-        "https://fbwbeen661.execute-api.ap-southeast-2.amazonaws.com/serverless_lambda_stage/updateCounter"
-      )
+      fetch(process.env.NEXT_PUBLIC_API_URL!)
         .then((response) => response.json())
         .then((res) => {
-          let numberCount: number = res.viewCount;
           let count: string = moment.localeData().ordinal(res.viewCount);
           setIsLoading(false);
           setVisitorCount(count);
+          setAnimate(true);
           sessionStorage.setItem("visitorCount", count);
           sessionStorage.setItem("hasFetched", "true");
         });
@@ -42,7 +47,13 @@ export default function Page() {
           <p>Calculating visitor count...</p> // Show loading text while fetching data
         ) : (
           <div>
-            <p>Visitor count is: {visitorCount}</p>
+            <motion.div
+              initial={{ opacity: animate ? 0 : 1 }}
+              animate={{ opacity: 1 }}
+              transition={{ ease: "easeInOut", duration: 1.75 }}
+            >
+              <p>You are the {visitorCount} visitor :)</p>
+            </motion.div>
           </div>
         )}
       </div>
