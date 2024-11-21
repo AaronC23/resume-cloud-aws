@@ -44,7 +44,7 @@ export default function Page() {
       <br />
       <div>
         {isLoading ? (
-          <p>Calculating visitor count...</p> // Show loading text while fetching data
+          <p>Calculating which visitor you are...</p> // Show loading text while fetching data
         ) : (
           <div>
             <motion.div
