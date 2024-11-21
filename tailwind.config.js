@@ -31,7 +31,6 @@ module.exports = {
       // 240% - sm
       // 200% - md
       // 170% - lg
-      // 133% - is lg??
       // 133% - xl
       // 110% - 2xl
       screens: {
