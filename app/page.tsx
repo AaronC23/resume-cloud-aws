@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import moment from "moment";
 import { motion } from "framer-motion";
+import Counter from "./counter";
 
 export default function Page() {
   const [visitorCount, setVisitorCount] = useState("");
@@ -10,6 +11,7 @@ export default function Page() {
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
+    /*
     const storedVisitorCount = sessionStorage.getItem("visitorCount");
     const hasFetched = sessionStorage.getItem("hasFetched");
 
@@ -34,6 +36,7 @@ export default function Page() {
           sessionStorage.setItem("hasFetched", "true");
         });
     }
+    */
   }, []);
 
   return (
@@ -43,19 +46,15 @@ export default function Page() {
       users. I hope you enjoy your stay.
       <br />
       <div>
-        {isLoading ? (
-          <p>Calculating which visitor you are...</p> // Show loading text while fetching data
-        ) : (
-          <div>
-            <motion.div
-              initial={{ opacity: animate ? 0 : 1 }}
-              animate={{ opacity: 1 }}
-              transition={{ ease: "easeInOut", duration: 1.75 }}
-            >
-              <p>You are the {visitorCount} visitor :)</p>
-            </motion.div>
-          </div>
-        )}
+        <div>
+          <motion.div
+            initial={{ opacity: animate ? 0 : 1 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 1.75 }}
+          >
+            <Counter />
+          </motion.div>
+        </div>
       </div>
     </div>
   );
