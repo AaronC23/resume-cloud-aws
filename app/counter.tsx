@@ -1,17 +1,33 @@
-import useSWR from "swr";
+import useCachedSWR from "./useCachedSWR";
 
-const fetcher = (url: string | URL | Request) =>
-  fetch(url).then((r) => r.json());
+const getOrdinalSuffix = (num: number): string => {
+  const j = num % 10,
+    k = num % 100;
+  if (j === 1 && k !== 11) {
+    return `${num}st`;
+  }
+  if (j === 2 && k !== 12) {
+    return `${num}nd`;
+  }
+  if (j === 3 && k !== 13) {
+    return `${num}rd`;
+  }
+  return `${num}th`;
+};
 
 export default function Counter() {
-  const { data, error } = useSWR(process.env.NEXT_PUBLIC_API_URL!, fetcher);
+  const { data, error } = useCachedSWR(process.env.NEXT_PUBLIC_API_URL!);
 
-  if (error) return <div>Failed to load</div>;
-  if (!data) return <div>Loading...</div>;
+  if (error) return <div>Failed to load visitor count</div>;
+  if (!data) return <div>Calculating how many people have visited...</div>;
+
+  const visitorMessage = `You are the ${getOrdinalSuffix(
+    data.viewCount
+  )} visitor!`;
 
   return (
     <div>
-      <h1>View count is... {data.viewCount}</h1>
+      <h1>{visitorMessage}</h1>
     </div>
   );
 }
