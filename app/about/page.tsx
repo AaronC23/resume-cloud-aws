@@ -1,4 +1,4 @@
-import Experience from "@/app/about/experience";
+import Experience from "@/components/experience";
 
 interface JobExperience {
   title: string;

@@ -1,6 +1,5 @@
-import Tech from "./tech";
+import Tech from "@/components/tech";
 
-// todo fix later
 interface TechStack {
   title: string;
   technologies: string;
