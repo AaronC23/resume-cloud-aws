@@ -1,13 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-
     <html lang="en">
       <head>
         <link rel="icon" href="/images/icon.ico" type="image/x-icon" />
@@ -19,8 +15,7 @@ function App() {
             <p className="title-font">Aaron Clark</p>
             <p className="subtext-font pb-3 md:pb-6">Developer</p>
             <main className="grid grid-cols-3 gap-5 layout">
-              <div className="col-span-1">
-              </div>
+              <div className="col-span-1"></div>
               <div className="col-span-2"></div>
             </main>
           </div>
@@ -33,6 +28,12 @@ function App() {
                 rel="noopener noreferrer"
               >
                 Mail
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  fixedWidth
+                  size="xs"
+                  className="ml-2"
+                />
               </a>
               <a
                 href="https://www.linkedin.com/in/aaron-clarky/"
@@ -41,6 +42,12 @@ function App() {
                 rel="noopener noreferrer"
               >
                 LinkedIn
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  fixedWidth
+                  size="xs"
+                  className="ml-2"
+                />
               </a>
               <a
                 href="https://github.com/AaronC23/"
@@ -49,6 +56,12 @@ function App() {
                 rel="noopener noreferrer"
               >
                 GitHub
+                <FontAwesomeIcon
+                  icon={faGithub}
+                  fixedWidth
+                  size="xs"
+                  className="ml-2"
+                />
               </a>
             </div>
             <div className="text-right">
@@ -58,7 +71,7 @@ function App() {
         </div>
       </body>
     </html>
-  )
+  );
 }
 
-export default App
+export default App;
