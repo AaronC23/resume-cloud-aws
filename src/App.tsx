@@ -1,6 +1,7 @@
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+// https://medium.com/@vitorbritto/react-design-patterns-layout-components-pattern-455c98e0bf92
 
 function App() {
   return (
