@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import Layout from "../components/Layout";
 
 function Home() {
@@ -11,13 +10,7 @@ function Home() {
         <br />
         <div>
           <div>
-            <motion.div
-              initial={{ opacity: 1 }}
-              animate={{ opacity: 1 }}
-              transition={{ ease: "easeInOut", duration: 1.75 }}
-            >
-              <h1>Counter should be here?</h1>
-            </motion.div>
+            <h1>Counter should be here?</h1>
           </div>
         </div>
       </div>

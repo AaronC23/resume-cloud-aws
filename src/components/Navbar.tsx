@@ -1,10 +1,7 @@
-interface Navigation {
-  name: string;
-  link: string;
-}
+import { Link } from "react-router";
 
 function Navbar() {
-  const navMap: Navigation[] = [
+  const navMap: any[] = [
     {
       name: "Home",
       link: "/",
@@ -19,15 +16,30 @@ function Navbar() {
     },
   ];
 
+  const { pathname } = location;
+
   return (
-    <div className="col-span-1 font-bold scrollable scrollbar-hide aboutpage">
+    <div className="font-bold scrollable scrollbar-hide aboutpage">
       <ul className="navbar-font navbar-spacing md:block">
         {navMap.map((page, index) => {
+          if (pathname === page.link) {
+            return (
+              <li key={index}>
+                <Link
+                  key={index}
+                  to={page.link}
+                  className="pointer-events-none"
+                >
+                  <p className="text-gray-400">&bull;</p>
+                </Link>
+              </li>
+            );
+          }
           return (
             <li key={index}>
-              <a key={index} className="hoverLink">
+              <Link key={index} className="hoverLink" to={page.link}>
                 {page.name}
-              </a>
+              </Link>
             </li>
           );
         })}
