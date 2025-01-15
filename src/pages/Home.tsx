@@ -1,3 +1,4 @@
+import VisitorCounter from "../api/VisitorCounter";
 import Layout from "../components/Layout";
 
 function Home() {
@@ -10,7 +11,7 @@ function Home() {
         <br />
         <div>
           <div>
-            <h1>Counter should be here?</h1>
+            <VisitorCounter />
           </div>
         </div>
       </div>

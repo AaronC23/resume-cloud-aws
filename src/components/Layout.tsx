@@ -5,17 +5,20 @@ import PageLayout from "./PageLayout";
 import Navbar from "./Navbar";
 import Content from "./Content";
 import OuterLayout from "./OuterLayout";
+import BackgroundImage from "./BackgroundImage";
 
 function Layout({ children }: any) {
   return (
     <OuterLayout>
-      <Border>
-        <Title />
-        <PageLayout>
-          <Navbar />
-          <Content>{children}</Content>
-        </PageLayout>
-      </Border>
+      <BackgroundImage>
+        <Border>
+          <Title />
+          <PageLayout>
+            <Navbar />
+            <Content>{children}</Content>
+          </PageLayout>
+        </Border>
+      </BackgroundImage>
       <Footer />
     </OuterLayout>
   );

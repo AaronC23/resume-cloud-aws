@@ -22,9 +22,9 @@ function TechStack() {
   return (
     <Layout>
       <div className="grid columns-1 col-span-2 scrollable scrollbar-hide aboutpage text-left">
-        {techExperiences.map((exp) => {
+        {techExperiences.map((exp, index) => {
           return (
-            <div className="pb-2 grid grid-cols-4 experience-font">
+            <div className="pb-2 grid grid-cols-4 experience-font" key={index}>
               <div className="col-span-4">
                 <div>
                   <div className="title">{exp.title}</div>
