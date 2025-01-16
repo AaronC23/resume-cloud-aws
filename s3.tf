@@ -2,7 +2,7 @@ module "template_files" {
   source = "hashicorp/dir/template"
 
   # {path.module} gets the path of where this file is located
-  base_dir = "${path.module}/src"
+  base_dir = "${path.module}/dist"
 }
 
 resource "aws_s3_bucket" "bucket" {
