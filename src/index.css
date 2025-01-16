@@ -1,0 +1,295 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "BarlowThin";
+  src: local("Barlow-Thin"),
+    url('./assets/fonts/barlow_thin/Barlow-Thin.ttf')
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+li {
+  display: line-block;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .title {
+    @apply font-bold;
+  }
+
+  .description {
+    @apply font-light text-gray-400 pt-1;
+  }
+
+  .technologies {
+    @apply font-light text-gray-500 pt-1;
+  }
+
+  .scrollable {
+    @apply overflow-y-scroll;
+  }
+
+  .not-scrollable {
+    @apply overflow-hidden;
+  }
+
+  .default-height {
+    @apply h-[calc(100vh-10px)];
+  }
+}
+
+.homepage,
+.layout,
+.aboutpage {
+  @apply h-[calc(100vh-160px)];
+}
+
+.experience-font,
+.navbar-font,
+.subtext-font,
+.icons {
+  @apply text-xxs;
+}
+
+.title-font {
+  @apply text-m;
+}
+
+.border-style {
+  @apply border border-gray-500 rounded-sm p-5 md:p-7;
+}
+
+.border-height {
+  @apply h-[calc(100vh-90px)];
+}
+
+.navbar-spacing {
+  @apply space-y-1;
+}
+
+@media (min-width: 420px) {
+
+  /* xs */
+  .aboutpage {
+    @apply h-[calc(100vh-170px)];
+  }
+
+  .experience-font,
+  .subtext-font {
+    @apply text-xs;
+  }
+
+  .title-font {
+    @apply text-base;
+  }
+}
+
+@media (min-width: 520px) {
+
+  /* s */
+  .aboutpage {
+    @apply h-[calc(100vh-200px)];
+  }
+
+  .icons,
+  .navbar-font {
+    @apply text-xs;
+  }
+
+  .experience-font,
+  .subtext-font {
+    @apply text-sm;
+  }
+
+  .title-font {
+    @apply text-xl;
+  }
+
+  .border-height {
+    @apply h-[calc(100vh-100px)];
+  }
+}
+
+@media (min-width: 640px) {
+
+  /* sm */
+  .aboutpage {
+    @apply h-[calc(100vh-210px)];
+  }
+
+  .navbar-font {
+    @apply text-sm;
+  }
+
+  .navbar-spacing {
+    @apply: space-y-2;
+  }
+
+  .subtext-font,
+  .icons {
+    @apply text-m;
+  }
+
+  .title-font {
+    @apply text-2xl;
+  }
+}
+
+@media (min-width: 720px) {
+
+  /* md */
+  .aboutpage {
+    @apply h-[calc(100vh-280px)];
+  }
+
+  .experience-font,
+  .navbar-font {
+    @apply text-m;
+  }
+
+  .subtext-font,
+  .icons {
+    @apply text-base;
+  }
+
+  .navbar-spacing {
+    @apply: space-y-3;
+  }
+
+  .title-font {
+    @apply text-3xl;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  /* lg */
+  .homepage {
+    @apply h-[calc(100vh-200px)];
+  }
+
+  .aboutpage {
+    @apply h-[calc(100vh-320px)];
+  }
+
+  .layout {
+    @apply h-[calc(100vh-300px)];
+  }
+
+  .border-height {
+    @apply h-[calc(100vh-120px)];
+  }
+
+  .experience-font,
+  .navbar-font {
+    @apply text-base;
+  }
+
+  .subtext-font,
+  .icons {
+    @apply text-l;
+  }
+
+  .title-font {
+    @apply text-4xl;
+  }
+}
+
+@media (min-width: 1280px) {
+
+  /* xl */
+  .aboutpage {
+    @apply h-[calc(100vh-350px)];
+  }
+
+  .layout {
+    @apply h-[calc(100vh-400px)];
+  }
+
+  .experience-font,
+  .navbar-font {
+    @apply text-l;
+  }
+
+  .navbar-spacing {
+    @apply: space-y-4;
+  }
+
+  .subtext-font,
+  .icons {
+    @apply text-xl;
+  }
+
+  .title-font {
+    @apply text-5xl;
+  }
+}
+
+@media (min-width: 1536px) {
+
+  /* 2xl */
+  .homepage {
+    @apply h-[calc(100vh-300px)];
+  }
+
+  .aboutpage {
+    @apply h-[calc(100vh-400px)];
+  }
+
+  .subtext-font {
+    @apply text-2xl;
+  }
+
+  .experience-font,
+  .navbar-font,
+  .icons {
+    @apply text-1.5xl;
+  }
+}
+
+a.hoverLink {
+  filter: grayscale(100%);
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+a.hoverLink:hover {
+  scale: 1;
+  opacity: 0.5;
+}
+
+svg {
+  fill: gray;
+  width: 20px;
+}
+
+svg:hover {
+  fill: white;
+}
