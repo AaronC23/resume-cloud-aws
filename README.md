@@ -8,7 +8,7 @@ The website can be found at: https://aaron-clark-dev.com
 ### Built With
 
 * AWS Cloud Services
-* HTML
+* Vite (React)
 * CSS (Tailwind)
 * Terraform (Infrastructure as Code)
 
