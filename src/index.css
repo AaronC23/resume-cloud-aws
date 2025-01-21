@@ -71,6 +71,10 @@ body {
   @apply h-[calc(100vh-160px)];
 }
 
+.homepage-mobile {
+  @apply h-[calc(100vh-10px)];
+}
+
 .experience-font,
 .navbar-font,
 .subtext-font,
@@ -87,6 +91,10 @@ body {
 }
 
 .border-height {
+  @apply h-[calc(100vh-90px)];
+}
+
+.border-mobile-height {
   @apply h-[calc(100vh-90px)];
 }
 
@@ -121,6 +129,10 @@ body {
   .icons,
   .navbar-font {
     @apply text-xs;
+  }
+
+  .mobile-navbar-font {
+    @apply text-sm;
   }
 
   .experience-font,
