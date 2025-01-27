@@ -94,6 +94,10 @@ body {
   @apply h-[calc(100vh-90px)];
 }
 
+.max-height {
+  @apply h-[calc(100vh-90px)];
+}
+
 .border-mobile-height {
   @apply h-[calc(100vh-90px)];
 }

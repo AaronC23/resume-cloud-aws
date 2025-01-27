@@ -31,6 +31,8 @@ module.exports = {
       // 133% - xl
       // 110% - 2xl
       screens: {
+        // potential a fix?         xs: { min: '0px', max: '639px' }, 
+
         'xs': '420px',
         's': '520px',
       },
