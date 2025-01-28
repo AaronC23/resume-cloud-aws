@@ -12,6 +12,7 @@ module.exports = {
         xxs: '0.3rem',
         xs: '0.4rem',
         sm: '0.5rem',
+        smm: '0.5rem',
         m: '0.65rem',
         base: '0.8rem',
         l: '1rem',
@@ -32,8 +33,7 @@ module.exports = {
       // 110% - 2xl
       screens: {
         // potential a fix?         xs: { min: '0px', max: '639px' }, 
-
-        'xs': '420px',
+        'xs': '430px',
         's': '520px',
       },
       spacing: {

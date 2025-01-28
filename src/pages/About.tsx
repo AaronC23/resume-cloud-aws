@@ -38,7 +38,10 @@ function About() {
       <div className="grid col-span-2 columns-1 scrollable scrollbar-hide aboutpage text-left">
         {experiences.map((exp, index) => {
           return (
-            <div className="pb-4 grid grid-cols-6 experience-font" key={index}>
+            <div
+              className="pb-10 grid grid-cols-6 new-experience-font"
+              key={index}
+            >
               <div className="col-span-2 md:cols-span-1">{exp.date}</div>
               <div className="col-span-4 md:cols-span-4">
                 <div className="title">{exp.title}</div>

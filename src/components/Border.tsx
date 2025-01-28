@@ -1,7 +1,7 @@
 function Border({ children }: any) {
   return (
     <>
-      <div className="p-10 border-style max-height">{children}</div>
+      <div className="p-8 border-style max-height">{children}</div>
     </>
   );
 }
