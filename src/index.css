@@ -76,7 +76,7 @@ body {
 .navbar-font,
 .subtext-font,
 .icons {
-  @apply text-smm;
+  @apply text-sm;
 }
 
 .title-font {

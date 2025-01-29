@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Footer() {
   return (
     <>
-      <div className="flex items-center justify-between subtext-font">
+      <div className="flex items-center justify-between text-sm xxs:text-smm xs:text-smm sm:text-base lg:text-l 2xl:text-xl">
         <div className="flex space-x-1">
           <a
             href="mailto:aaronclarkofficial@gmail.com"
