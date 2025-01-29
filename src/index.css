@@ -106,7 +106,7 @@ body {
 @media (min-width: 430px) {
   /* xs */
   .aboutpage {
-    @apply h-[calc(100vh-170px)];
+    @apply h-[calc(100vh-190px)];
   }
 
   .experience-font,
