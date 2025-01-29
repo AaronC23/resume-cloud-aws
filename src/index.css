@@ -4,8 +4,7 @@
 
 @font-face {
   font-family: "BarlowThin";
-  src: local("Barlow-Thin"),
-    url('./assets/fonts/barlow_thin/Barlow-Thin.ttf')
+  src: local("Barlow-Thin"), url("./assets/fonts/barlow_thin/Barlow-Thin.ttf");
 }
 
 :root {
@@ -22,15 +21,13 @@
   }
 }
 
-li {
+/* li {
   display: line-block;
-}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  color: white;
+  background: black;
 }
 
 @layer utilities {
@@ -68,18 +65,22 @@ body {
 .homepage,
 .layout,
 .aboutpage {
-  @apply h-[calc(100vh-160px)];
+  @apply h-[calc(100vh-200px)];
+}
+
+.new-experience-font {
+  @apply text-base;
 }
 
 .experience-font,
 .navbar-font,
 .subtext-font,
 .icons {
-  @apply text-xxs;
+  @apply text-sm;
 }
 
 .title-font {
-  @apply text-m;
+  @apply text-xl;
 }
 
 .border-style {
@@ -90,15 +91,22 @@ body {
   @apply h-[calc(100vh-90px)];
 }
 
+.max-height {
+  @apply h-[calc(100vh-90px)];
+}
+
+.border-mobile-height {
+  @apply h-[calc(100vh-90px)];
+}
+
 .navbar-spacing {
   @apply space-y-1;
 }
 
-@media (min-width: 420px) {
-
+@media (min-width: 430px) {
   /* xs */
   .aboutpage {
-    @apply h-[calc(100vh-170px)];
+    @apply h-[calc(100vh-190px)];
   }
 
   .experience-font,
@@ -112,7 +120,6 @@ body {
 }
 
 @media (min-width: 520px) {
-
   /* s */
   .aboutpage {
     @apply h-[calc(100vh-200px)];
@@ -121,6 +128,10 @@ body {
   .icons,
   .navbar-font {
     @apply text-xs;
+  }
+
+  .mobile-navbar-font {
+    @apply text-sm;
   }
 
   .experience-font,
@@ -138,7 +149,6 @@ body {
 }
 
 @media (min-width: 640px) {
-
   /* sm */
   .aboutpage {
     @apply h-[calc(100vh-210px)];
@@ -163,10 +173,9 @@ body {
 }
 
 @media (min-width: 720px) {
-
   /* md */
   .aboutpage {
-    @apply h-[calc(100vh-280px)];
+    @apply h-[calc(100vh-260px)];
   }
 
   .experience-font,
@@ -189,14 +198,13 @@ body {
 }
 
 @media (min-width: 1024px) {
-
   /* lg */
   .homepage {
     @apply h-[calc(100vh-200px)];
   }
 
   .aboutpage {
-    @apply h-[calc(100vh-320px)];
+    @apply h-[calc(100vh-240px)];
   }
 
   .layout {
@@ -223,16 +231,16 @@ body {
 }
 
 @media (min-width: 1280px) {
-
   /* xl */
   .aboutpage {
-    @apply h-[calc(100vh-350px)];
+    @apply h-[calc(100vh-280px)];
   }
 
   .layout {
     @apply h-[calc(100vh-400px)];
   }
 
+  .new-experience-font,
   .experience-font,
   .navbar-font {
     @apply text-l;
@@ -253,18 +261,20 @@ body {
 }
 
 @media (min-width: 1536px) {
-
   /* 2xl */
   .homepage {
     @apply h-[calc(100vh-300px)];
   }
 
   .aboutpage {
-    @apply h-[calc(100vh-400px)];
+    @apply h-[calc(100vh-300px)];
   }
 
   .subtext-font {
     @apply text-2xl;
+  }
+  .new-experience-font {
+    @apply text-xl;
   }
 
   .experience-font,
