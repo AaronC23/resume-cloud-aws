@@ -39,7 +39,7 @@ function TechStack() {
               <div>
                 <div>
                   <div className="title">{exp.title}</div>
-                  <ul className="list-disc pl-3 xl:pl-4 2xl:pl-5">
+                  <ul className="list-disc pl-4 2xl:pl-5">
                     {exp.technologies.map((tech: string, index: any) => {
                       return (
                         <li className="description" key={index}>
