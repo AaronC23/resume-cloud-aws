@@ -20,7 +20,7 @@ function Navbar() {
 
   return (
     <div className="font-bold scrollable scrollbar-hide aboutpage">
-      <ul className="text-base navbar-spacing md:block">
+      <ul className="text-base md:text-l xl:text-xl 2xl:text-1.5xl navbar-spacing md:block">
         {navMap.map((page, index) => {
           if (pathname === page.link) {
             return (

@@ -32,6 +32,7 @@ function TechStack() {
 
   return (
     <Layout>
+      {/* Todo make this do 2 columns when size is 240% or above */}
       <div className="grid columns-1 col-span-2 scrollable scrollbar-hide aboutpage text-left">
         {techExperiences.map((exp, index) => {
           return (
@@ -39,7 +40,7 @@ function TechStack() {
               <div>
                 <div>
                   <div className="title">{exp.title}</div>
-                  <ul className="list-disc pl-3">
+                  <ul className="list-disc pl-3 xl:pl-4 2xl:pl-5">
                     {exp.technologies.map((tech: string, index: any) => {
                       return (
                         <li className="description" key={index}>

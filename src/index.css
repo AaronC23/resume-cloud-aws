@@ -175,7 +175,7 @@ body {
 @media (min-width: 720px) {
   /* md */
   .aboutpage {
-    @apply h-[calc(100vh-280px)];
+    @apply h-[calc(100vh-260px)];
   }
 
   .experience-font,
@@ -204,7 +204,7 @@ body {
   }
 
   .aboutpage {
-    @apply h-[calc(100vh-320px)];
+    @apply h-[calc(100vh-240px)];
   }
 
   .layout {
@@ -233,13 +233,14 @@ body {
 @media (min-width: 1280px) {
   /* xl */
   .aboutpage {
-    @apply h-[calc(100vh-350px)];
+    @apply h-[calc(100vh-280px)];
   }
 
   .layout {
     @apply h-[calc(100vh-400px)];
   }
 
+  .new-experience-font,
   .experience-font,
   .navbar-font {
     @apply text-l;
@@ -266,11 +267,14 @@ body {
   }
 
   .aboutpage {
-    @apply h-[calc(100vh-400px)];
+    @apply h-[calc(100vh-300px)];
   }
 
   .subtext-font {
     @apply text-2xl;
+  }
+  .new-experience-font {
+    @apply text-xl;
   }
 
   .experience-font,
