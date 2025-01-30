@@ -32,41 +32,12 @@ module.exports = {
       // 133% - xl
       // 110% - 2xl
       screens: {
-        // potential a fix?         xs: { min: '0px', max: '639px' }, 
         'xxs': '375px',
         'xs': '425px',
         's': '520px',
       },
       spacing: {
         '5px': '5px',
-      },
-      animation: {
-        typewriter: 'typewriter 5s steps(30) forwards',
-        caret: 'typewriter 5s steps(30) forwards, blink 1s steps(30) infinite 3s',
-      },
-      keyframes: {
-        typewriter: {
-          to: {
-            left: '100%',
-          },
-        },
-        blink: {
-          '0%': {
-            opacity: '0',
-          },
-          '0.1%': {
-            opacity: '1',
-          },
-          '50%': {
-            opacity: '1',
-          },
-          '50.1%': {
-            opacity: '0',
-          },
-          '100%': {
-            opacity: '0',
-          },
-        },
       },
     },
   },

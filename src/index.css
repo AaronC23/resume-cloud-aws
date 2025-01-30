@@ -21,10 +21,6 @@
   }
 }
 
-/* li {
-  display: line-block;
-} */
-
 body {
   color: white;
   background: black;
@@ -62,17 +58,16 @@ body {
   }
 }
 
-.homepage,
+.homepage-height,
 .layout,
-.aboutpage {
+.page-height {
   @apply h-[calc(100vh-200px)];
 }
 
-.new-experience-font {
+.experience-font {
   @apply text-base;
 }
 
-.experience-font,
 .navbar-font,
 .subtext-font,
 .icons {
@@ -105,11 +100,10 @@ body {
 
 @media (min-width: 430px) {
   /* xs */
-  .aboutpage {
+  .page-height {
     @apply h-[calc(100vh-190px)];
   }
 
-  .experience-font,
   .subtext-font {
     @apply text-xs;
   }
@@ -121,7 +115,7 @@ body {
 
 @media (min-width: 520px) {
   /* s */
-  .aboutpage {
+  .page-height {
     @apply h-[calc(100vh-200px)];
   }
 
@@ -134,7 +128,6 @@ body {
     @apply text-sm;
   }
 
-  .experience-font,
   .subtext-font {
     @apply text-sm;
   }
@@ -150,7 +143,7 @@ body {
 
 @media (min-width: 640px) {
   /* sm */
-  .aboutpage {
+  .page-height {
     @apply h-[calc(100vh-210px)];
   }
 
@@ -174,11 +167,10 @@ body {
 
 @media (min-width: 720px) {
   /* md */
-  .aboutpage {
+  .page-height {
     @apply h-[calc(100vh-260px)];
   }
 
-  .experience-font,
   .navbar-font {
     @apply text-m;
   }
@@ -199,11 +191,11 @@ body {
 
 @media (min-width: 1024px) {
   /* lg */
-  .homepage {
+  .homepage-height {
     @apply h-[calc(100vh-200px)];
   }
 
-  .aboutpage {
+  .page-height {
     @apply h-[calc(100vh-240px)];
   }
 
@@ -215,7 +207,6 @@ body {
     @apply h-[calc(100vh-120px)];
   }
 
-  .experience-font,
   .navbar-font {
     @apply text-base;
   }
@@ -232,7 +223,7 @@ body {
 
 @media (min-width: 1280px) {
   /* xl */
-  .aboutpage {
+  .page-height {
     @apply h-[calc(100vh-280px)];
   }
 
@@ -240,7 +231,6 @@ body {
     @apply h-[calc(100vh-400px)];
   }
 
-  .new-experience-font,
   .experience-font,
   .navbar-font {
     @apply text-l;
@@ -262,22 +252,21 @@ body {
 
 @media (min-width: 1536px) {
   /* 2xl */
-  .homepage {
+  .homepage-height {
     @apply h-[calc(100vh-300px)];
   }
 
-  .aboutpage {
+  .page-height {
     @apply h-[calc(100vh-300px)];
   }
 
   .subtext-font {
     @apply text-2xl;
   }
-  .new-experience-font {
+  .experience-font {
     @apply text-xl;
   }
 
-  .experience-font,
   .navbar-font,
   .icons {
     @apply text-1.5xl;

@@ -32,10 +32,10 @@ function TechStack() {
 
   return (
     <Layout>
-      <div className="grid grid-cols-1 sm:grid-cols-2 scrollable scrollbar-hide aboutpage text-left">
+      <div className="grid grid-cols-1 sm:grid-cols-2 scrollable scrollbar-hide page-height text-left">
         {techExperiences.map((exp, index) => {
           return (
-            <div className="new-experience-font pb-2" key={index}>
+            <div className="experience-font pb-2" key={index}>
               <div>
                 <div>
                   <div className="title">{exp.title}</div>
