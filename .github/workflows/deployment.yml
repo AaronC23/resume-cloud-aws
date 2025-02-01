@@ -3,16 +3,16 @@ name: Upload Website
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-        # Checkout latest changes
+      # Checkout latest changes
       - name: checkout master
-        uses: actions/checkout@master 
-        
+        uses: actions/checkout@master
+
         # Sync s3
       - name: sync s3
         uses: jakejarvis/s3-sync-action@master
@@ -22,8 +22,8 @@ jobs:
           AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_REGION: 'ap-southeast-2'
-          SOURCE_DIR: './src'
+          AWS_REGION: "ap-southeast-2"
+          SOURCE_DIR: "./src"
 
       # Invalidate CloudFront
       - name: Invalidate CloudFront
@@ -33,4 +33,4 @@ jobs:
           PATHS: "/"
           AWS_REGION: "us-east-1"
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}   
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
