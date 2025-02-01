@@ -53,9 +53,9 @@ On merge to master the GitHub actions perform the following:
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Add mobile support
-- [ ] Tidy up CSS!
-- [ ] Add About Page to Website
+- [x] Add mobile support
+- [x] Tidy up CSS!
+- [x] Add About Page to Website
 
 <!-- CONTACT -->
 ## Contact
