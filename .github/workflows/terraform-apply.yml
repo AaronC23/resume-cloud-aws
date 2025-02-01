@@ -21,6 +21,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.x"
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Website
+        run: npm run build --if-present
+
+      - name: Copy Build to Config Directory
+        run: cp -r dist/* ${{ env.CONFIG_DIRECTORY }}
+
       - name: Upload Configuration
         uses: hashicorp/tfc-workflows-github/actions/upload-configuration@v1.0.0
         id: apply-upload
