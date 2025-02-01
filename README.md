@@ -36,14 +36,15 @@ Lambda was used with DynamoDB to provide a visitor counter which is updated on l
 ## Terraform
 Terraform was fully utilised to configure and provision all AWS services.
 
-## Github Actions
+## GitHub Actions
 
 When a PR is created, the GitHub actions will perform a terraform plan to preview any infrastructure changes for AWS.
 
 ![Example PR GitHub actions](https://github.com/AaronC23/resume-cloud-aws/assets/28281365/333af35a-74ab-4ed1-8171-664a2cb2ef47)
 
-On merge to master the GitHub actions perform the following:
+On merge to main the GitHub actions perform the following:
    
+   * npm install, run and build for static HTML
    * terraform apply (auto approve)
    * S3 sync static files (HTML/CSS/JS) 
    * Invalidate the cloudfront cache to reload any HTML changes (if needed)
@@ -56,6 +57,7 @@ On merge to master the GitHub actions perform the following:
 - [x] Add mobile support
 - [x] Tidy up CSS!
 - [x] Add About Page to Website
+- [x] Update GitHub actions to build website 
 
 <!-- CONTACT -->
 ## Contact
