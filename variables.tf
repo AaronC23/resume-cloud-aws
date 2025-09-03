@@ -28,3 +28,8 @@ variable "AWS_SECRET_ACCESS_KEY" {
   type = string
   default = ""
 }
+
+variable "acm_certificate_arn" {
+  description = "ARN of existing ACM certificate in us-east-1"
+  type        = string
+}
