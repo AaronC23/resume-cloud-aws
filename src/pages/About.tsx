@@ -7,7 +7,7 @@ function About() {
       description:
         "Engineering elegant solutions for a Space Domain Awareness Software.",
       technologies: "React \u2022 Java (Vert.X) \u2022 Kubernetes \u2022 Kafka",
-      date: "Jan 2023 -",
+      date: "Jan 2023 - June 2025",
     },
     {
       title: "Graduate Software Engineer | Saab ",
