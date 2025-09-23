@@ -11,8 +11,6 @@ createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route index element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/techstack" element={<TechStack />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
