@@ -7,6 +7,53 @@
   src: local("Newsreader"), url("./assets/fonts/newsreader/Newsreader.ttf");
 }
 
+/* GSAP CSS */
+
+.main-tool-bar {
+  height: 80px;
+  color: #0e100f;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: ease 0.4s;
+  &--scrolled {
+    height: 10px;
+  }
+}
+
+section {
+  position: relative;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+
+h1 {
+  position: sticky;
+  top: 47.5vh;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-size: 28px;
+}
+
+.scrollable-area {
+  height: 200vh;
+}
+
+.sticky-statement {
+  min-height: 100vh;
+}
+
+/* OTHER CSS */
+
 :root {
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 214, 219, 220;

@@ -5,13 +5,10 @@ import { BrowserRouter, Route, Routes } from "react-router";
 import Home from "./pages/Home.tsx";
 import About from "./pages/About.tsx";
 import TechStack from "./pages/TechStack.tsx";
+import App from "./App.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route index element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <App />
   </StrictMode>
 );
