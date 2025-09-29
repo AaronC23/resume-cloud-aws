@@ -17,19 +17,22 @@
   left: 0;
   top: 0;
   transition: ease 0.4s;
+
   &--scrolled {
     height: 10px;
   }
 }
 
-section {
+.statement {
   position: relative;
   background: rgb(34, 193, 195);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
+  background: linear-gradient(0deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%);
+}
+
+.width-gsap {
+  width: 100%;
 }
 
 h1 {
@@ -42,6 +45,7 @@ h1 {
   margin-right: auto;
   text-align: center;
   font-size: 28px;
+  opacity: 100%;
 }
 
 .scrollable-area {
@@ -146,6 +150,7 @@ body {
 }
 
 @media (min-width: 430px) {
+
   /* xs */
   .page-height {
     @apply h-[calc(100vh-190px)];
@@ -161,6 +166,7 @@ body {
 }
 
 @media (min-width: 520px) {
+
   /* s */
   .page-height {
     @apply h-[calc(100vh-200px)];
@@ -189,6 +195,7 @@ body {
 }
 
 @media (min-width: 640px) {
+
   /* sm */
   .page-height {
     @apply h-[calc(100vh-210px)];
@@ -213,6 +220,7 @@ body {
 }
 
 @media (min-width: 720px) {
+
   /* md */
   .page-height {
     @apply h-[calc(100vh-260px)];
@@ -237,6 +245,7 @@ body {
 }
 
 @media (min-width: 1024px) {
+
   /* lg */
   .homepage-height {
     @apply h-[calc(100vh-200px)];
@@ -269,6 +278,7 @@ body {
 }
 
 @media (min-width: 1280px) {
+
   /* xl */
   .page-height {
     @apply h-[calc(100vh-280px)];
@@ -298,6 +308,7 @@ body {
 }
 
 @media (min-width: 1536px) {
+
   /* 2xl */
   .homepage-height {
     @apply h-[calc(100vh-300px)];
@@ -310,6 +321,7 @@ body {
   .subtext-font {
     @apply text-2xl;
   }
+
   .experience-font {
     @apply text-xl;
   }
