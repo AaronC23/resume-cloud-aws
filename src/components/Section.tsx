@@ -6,11 +6,13 @@ type SectionProps = {
   className?: string;
 };
 
+//       className={`min-h-screen items-center grid grid-cols-1 text-center font-newsreader ${className}`}
+
 function Section({ id, children, className = "" }: SectionProps) {
   return (
     <div
       id={id}
-      className={`min-h-screen flex items-center justify-center ${className}`}
+      className={`min-h-screen items-center grid grid-cols-1 text-center font-newsreader ${className}`}
     >
       {children}
     </div>

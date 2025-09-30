@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     fontFamily: {
-      barlow: ["Newsreader", "sans-serif"],
+      newsreader: ["Newsreader", "sans-serif"],
     },
     extend: {
       fontSize: {

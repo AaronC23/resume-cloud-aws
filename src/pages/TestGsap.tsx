@@ -34,13 +34,13 @@ function TestGsap() {
       <div ref={container} className="width-gsap" >
         <section className="statement">
           <div className="sticky-statement">
-            <h1>Statement one</h1>
+            <h1 className="statement-css">Statement one</h1>
           </div>
           <div className="sticky-statement">
-            <h1>Statement two</h1>
+            <h1 className="statement-css">Statement two</h1>
           </div>
           <div className="sticky-statement">
-            <h1>Statement three</h1>
+            <h1 className="statement-css">Statement three</h1>
           </div>
         </section>
       </div>

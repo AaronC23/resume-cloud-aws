@@ -6,6 +6,8 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 export default function Navbar() {
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    gsap.set(container.current, { yPercent: -100 });
+
   };
 
   gsap.registerPlugin(useGSAP); // register the hook to avoid React version discrepancies

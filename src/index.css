@@ -35,7 +35,7 @@
   width: 100%;
 }
 
-h1 {
+.statement-css {
   position: sticky;
   top: 47.5vh;
   font-family: "Poppins", sans-serif;
@@ -84,9 +84,6 @@ body {
 }
 
 @layer components {
-  .title {
-    @apply font-bold;
-  }
 
   .description {
     @apply font-light text-gray-400 pt-1;
