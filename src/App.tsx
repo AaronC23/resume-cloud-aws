@@ -10,7 +10,7 @@ export default function App() {
     <>
       {/* <Navbar /> */}
 
-      <Section id="about" className="bg-gray-100">
+      <Section id="about" className="bg-white">
         <About />
       </Section>
 
